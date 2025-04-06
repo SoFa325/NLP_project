@@ -29,9 +29,9 @@ def extract_texts_from_folder(pdf_folder: Path, output_folder: Path):
 
 if __name__ == "__main__":
     # Файлы PDF (не архив)
-    pdf_input_folder = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/PDF")
+    pdf_input_folder = Path("./PDFiles/Files/")
     # Сохраненные файлы (.txt)
-    output_text_folder = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/TEXT")
+    output_text_folder = Path("./PDFiles/Result/")
     extract_texts_from_folder(pdf_input_folder, output_text_folder)
 
 
@@ -73,3 +73,4 @@ async def convert_pdf_to_text(file: UploadFile = File(...)):
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
+"""
