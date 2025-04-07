@@ -80,5 +80,4 @@ if __name__ == "__main__":
     output_text_direct = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/TXT_direct") #txt напрямую из пдф
     output_text_from_docx = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/TXT_from_docx") #txt через docx
     docx_temp_folder = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/DOCX_temp") #Полученные файлы docx
-
     extract_texts_and_normalize(pdf_input_folder, output_text_direct, output_text_from_docx, docx_temp_folder)
