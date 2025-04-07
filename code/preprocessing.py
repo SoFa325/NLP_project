@@ -12,8 +12,16 @@ def preprocessing(text: str) -> str:
             filtered_tokens.append(token.text.strip())
     return ' '.join(filtered_tokens)
 
+def lemmatization(text: str) -> str:
+    nlp = spacy.load('en_core_web_sm')
+    doc = nlp(text)
+    lemmatized_tokens = []
+    for token in doc:
+        lemmatized_tokens.append( token.lemma_)
+    return ' '.join(lemmatized_tokens)
+
 #здесь пример использования
-with open('cleaned_file.txt', 'r', encoding='utf-8') as file:#откуда
+with open('tgt.txt', 'r', encoding='utf-8') as file:#откуда
     text = file.read()
 with open('res.txt', 'w', encoding='utf-8') as output_file:#куда
-    output_file.write(preprocessing(text))
+    output_file.write(lemmatization(preprocessing(text)))
