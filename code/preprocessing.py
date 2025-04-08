@@ -1,5 +1,7 @@
 import spacy
 import re
+from collections import defaultdict
+from termcolor import colored
 
 def preprocessing(text: str) -> str:
     nlp = spacy.load('en_core_web_sm')
@@ -20,8 +22,22 @@ def lemmatization(text: str) -> str:
         lemmatized_tokens.append( token.lemma_)
     return ' '.join(lemmatized_tokens)
 
+def get_homonyms(text: str) -> str:
+    nlp = spacy.load('en_core_web_sm')
+    doc = nlp(text)
+    homonyms = defaultdict(set)
+    for token in doc:
+        if not token.is_space:
+            homonyms[token.text.lower()].add(token.pos_)
+    
+    homonyms_filtered = {word: pos_tags for word, pos_tags in homonyms.items() if len(pos_tags) > 0}
+    
+    return homonyms_filtered
+
 #здесь пример использования
 with open('tgt.txt', 'r', encoding='utf-8') as file:#откуда
     text = file.read()
 with open('res.txt', 'w', encoding='utf-8') as output_file:#куда
-    output_file.write(lemmatization(preprocessing(text)))
+    text = get_homonyms(lemmatization(preprocessing(text)))
+    for word, pos_tags in text.items():
+        print(colored(f"Слово: {word}", "blue"), colored(f"Омонимий: {len(pos_tags)}", "green"), colored(f"Части речи: {pos_tags}", "cyan"))
