@@ -29,10 +29,20 @@ def get_homonyms(text: str) -> str:
     for token in doc:
         if not token.is_space:
             homonyms[token.text.lower()].add(token.pos_)
-    
-    homonyms_filtered = {word: pos_tags for word, pos_tags in homonyms.items() if len(pos_tags) > 0}
-    
+    homonyms_filtered = {word: pos_tags for word, pos_tags in homonyms.items() if len(pos_tags) > 1}
     return homonyms_filtered
+
+#если проценты нужны омонимий
+def calculate_homonymy_percentage(text: str) -> float:
+    lemmatized_text = lemmatization(preprocessing(text))
+    homonyms = get_homonyms(lemmatized_text)
+    total_words = len(lemmatized_text.split())
+    homonym_count = len(homonyms)
+    if total_words == 0:
+        return 0.0
+    percentage = (homonym_count / total_words) * 100
+    return percentage
+
 
 #здесь пример использования
 with open('tgt.txt', 'r', encoding='utf-8') as file:#откуда
@@ -41,3 +51,5 @@ with open('res.txt', 'w', encoding='utf-8') as output_file:#куда
     text = get_homonyms(lemmatization(preprocessing(text)))
     for word, pos_tags in text.items():
         print(colored(f"Слово: {word}", "blue"), colored(f"Омонимий: {len(pos_tags)}", "green"), colored(f"Части речи: {pos_tags}", "cyan"))
+
+    #print(calculate_homonymy_percentage(text))
