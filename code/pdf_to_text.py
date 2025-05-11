@@ -76,8 +76,8 @@ def extract_texts_and_normalize(pdf_folder: Path, output_direct: Path, output_fr
             print(f"Нет текста через DOCX: {pdf_path.name}")
 
 if __name__ == "__main__":
-    pdf_input_folder = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/PDF") #pdf файлы
-    output_text_direct = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/TXT_direct") #txt напрямую из пдф
-    output_text_from_docx = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/TXT_from_docx") #txt через docx
-    docx_temp_folder = Path("C:/Users/Анастасия/OneDrive/Рабочий стол/DOCX_temp") #Полученные файлы docx
+    pdf_input_folder = Path("../PDFiles/PDFiles/Files") #pdf файлы
+    output_text_direct = Path("../PDFiles/PDFiles/Result/TXT_direct") #txt напрямую из пдф
+    output_text_from_docx = Path("../PDFiles/PDFiles/Result/TXT_from_docx") #txt через docx
+    docx_temp_folder = Path("../PDFiles/PDFiles/Result/DOCX_temp") #Полученные файлы docx
     extract_texts_and_normalize(pdf_input_folder, output_text_direct, output_text_from_docx, docx_temp_folder)

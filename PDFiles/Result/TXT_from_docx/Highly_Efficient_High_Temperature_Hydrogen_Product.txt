@@ -1,0 +1,131 @@
+See discussions, stats, and author profiles for this publication at: 
+
+Conference Paper · June 2008
+
+Source: DLR
+
+5 authors, including:
+
+125PUBLICATIONS3,294CITATIONS
+
+Some of the authors of this publication are also working on these related projects:
+
+Oxygen-Transporting Membranes
+
+Efficient Power2Gas Combining SOEC and Biomass Gasification (EP2Gas)
+
+All content following this page was uploaded by on 23 May 2014.
+
+The user has requested enhancement of the downloaded file.
+
+HIGHLY EFFICIENT, HIGH TEMPERATURE, HYDROGEN PRODUCTION BY WATER ELECTROLYSIS (HI2H2) 
+
+M. Zahid1, A. Brisse1, A. Hauch2, G. Schiller3& U. Vogt4  1European Institute For Energy Research (EIFER)  Emmy-Noether-Strasse 11, D-76131 Karlsruhe (Germany) zahid@eifer.uni-karlsruhe.de
+
+2Risø laboratory, Technical University of Denmark (Risø DTU), Frederiksborgvej 399, 
+
+DK-4000 Roskilde (Denmark), 
+
+3Deutsches Zentrum für Luft- und Raumfahrt (DLR), Pfaffenwaldring 38-40, D-70569 
+
+Stuttgart (Germany), 
+
+4Eidgenössische Materialprüfungs- und Forschungsanstalt (EMPA), Ueberlandstrasse 
+
+129, CH-8600 Duebendorf (Switzerland), 
+
+EXTENDED ABSTRACT 
+
+The variety of energy sources which can be used to produce hydrogen makes hydrogen more and more attractive as an energy vector. A way to transform renewable and other non-fossil sources of energy into hydrogen is water electrolysis. 
+
+The specific targeted research project “Highly Efficient, High Temperature, Hydrogen Production by Water Electrolysis” (Hi2H2) was launched in 2004 in the frame of the European Framework Program 6. The aim of the project was to demonstrate the feasibility of hydrogen production by high temperature water electrolysis using currently available Solid Oxide Fuel Cells (SOFC) technology. Coupled to renewable energy sources, this technology may meet the present environmental and economical requests. The Hi2H2 project is a consortium of four European research laboratories - EIFER (coordinator) and DLR in Germany, Risø DTU in Denmark, and EMPA in Switzerland, bringing together skills and experience in the field of material science, electrochemistry, and renewable energy. 
+
+In order to determine the best operating conditions of the Solid Oxide Electrolyser Cells (SOEC) in the High Temperature Electrolysis (HTE) mode, a number of experiments have been realized at different scales, from cells and single repeating units (SRU) to stack. Results obtained were then used to make the technical and economical analysis of the hydrogen production by high temperature water electrolysis. 
+
+M. Zahid, A. Brisse, A. Hauch, G. Schiller & U. Vogt 
+
+Introduction 
+
+The uniqueness of the concept is to perform water electrolysis at a high temperature, between 700 and 900°C. High temperature electrolysis of steam (HTE) is expected to consume less electrical energy as compared to electrolysis at low temperature as consequence of the more favourable thermodynamic and electrochemical kinetic conditions for the reaction (Dutta, 1990). 
+
+Experimental  Two types of planar SOFC designs with up to 100 cm2 active area were considered: an electrode (ceramic-metal compound) supported and a porous metal substrate supported Solid Oxide Electrolyser Cell (SOEC). Low cost industrial manufacturing techniques (like screen printing and tape casting) are applied to produce the advanced ceramic materials 
+
+Performances of these SOECs were measured as a function of the operating temperature and the percentage of humidity of the inlet gas. As expected, the performance of the cell becomes better with increasing the operating temperature and the humidification level. High performances when achieved using electrode supported SOEC’s made at Risø DTU. So far, no SOECs have been reported to have better initial performance at similar operating conditions. A record-breaking performance was reached at 950°C, where steam electrolysis was operated at a current density of -3.6 A.cm-2 and a cell voltage of only 1.48 V (Jensen et al, 2007) (Fig. 1). These current densities were obtained at high electrical efficiencies which would correspond to a production rate of hydrogen of 1.34 kg.m-2.h-1. 
+
+Cell voltage 
+
+1.6
+
+1.4
+
+1.2
+
+1
+
+0.8
+
+0.6
+
+0.4
+
+0
+
+Fig. 1: j-V curves on the Risø solid oxide cell as an electrolyser cell and as a fuel cell at different temperatures and steam partial pressures in the inlet gas to the cell (Jensen et al, 2007). 
+
+Durability tests of up to 2500 hours were performed with single cells. Some tests demonstrated that a degradation below 2%/1000h can be achieved at current densities down to -0.5 A/cm2, temperatures between 800 and 950°C, and a steam percentage of up to 70 vol.%. 
+
+Cells were assembled with an interconnect plate to build a serial repeating unit (SRU). This SRU was sealed with a glass seal. Protective coatings of the interconnect plates were developed and validated during the project. In order to account to the corrosive operating conditions (high temperature and oxidizing atmosphere). Durability tests of SRUs demonstrated that corrosion of the interconnect plate can be slowed down by the 
+
+M. Zahid, A. Brisse, A. Hauch, G. Schiller & U. Vogt 
+
+use of protective coatings. However, in-situ impedance spectroscopy measurements revealed that the electrical conductivity of these coatings has to be further improved. 
+
+An increase in the cell voltage was observed by Risø DTU during the first hundred hours of the durability test when a glass seal was used in the SRU. Thereafter the cell voltage decreased. The passivation/activation phenomenon was unambiguously attributed to a silica deposition, coming from the glass seal, at the interface between the electrolyte and the hydrogen electrode (Hauch et al, 2007). A sealing pre-treatment was developed to avoid the initial passivation/activation process (Hauch et al, 2008). 
+
+The latest development consisted in the assembly of two electrolyser stacks of 250 and 600 cm2 active areas. The first stack (250 cm2 active area) was tested for more than 3500h at 800°C and -0.3 A/cm². The average degradation rate during the first 2000 h was about 14 %/1000h (Fig. 2). After 2000 hours, the steam content was increased, which improve the stack performance, and leaded to a lower degradation rate of 6 %/1000h. 
+
+8
+
+7
+
+1,5
+
+1,0
+
+0,5
+
+Time, h
+
+Fig. 2: Stack and cell voltage evolution during the test. Gas conditions before 2000 h are 1 Nl/min H2 + 0.5 Nl/min N2 at the hydrogen electrode side, 7.5 Nl/min at the oxygen electrode side, and 50 vol.% of steam. After 2000 h, the N2 flow was stopped and the steam content was increased to 70 vol.%. 
+
+Based on the achieved results, a techno-economical analysis was made to predict the hydrogen production cost. A cost of around 2 €/kg was calculated assuming an average electricity price of 0.05 €/kWh, a cell operating voltage below the value of thermoneutral potential (1.3 V at 800°C) and a water vapour source at 200°C. The study also revealed that an increase in the temperature of the water source would not decrease the hydrogen cost significantly because the main factor influencing the hydrogen production cost is the electricity price. 
+
+Conclusions 
+
+Results obtained within the project have demonstrated that hydrogen can be produced through water electrolysis with higher efficiencies, greater than 90%. SOFC can be operated in the electrolysis mode with low operation voltages in the range of 1 to 1.3V. Cells are thus suitable for reversible operation. The estimated hydrogen production cost 
+
+M. Zahid, A. Brisse, A. Hauch, G. Schiller & U. Vogt 
+
+indicates that the SOEC technology has the potential to be competitive with the other low temperature hydrogen production processes. 
+
+Acknowledgement 
+
+We acknowledge the European Commission for supporting the project. 
+
+References 
+
+Dutta S., (1990), “Technology assessment of advanced electrolytic hydrogen production”, International Journal of Hydrogen Energy, 15, pp. 379-386. 
+
+Hauch A., S.H. Jensen S.H., Bilde-Sorensen J.B., and Mogensen M., (2007), “Silica Segregation in the Ni/YSZ Electrode”, Journal of the Electrochemical Society, 154, pp. A619-A626. 
+
+Hauch A., Ebbesen S., Jensen S.H., and Mogensen M., (2008), “Solid Oxide Electrolysis Cells – Microstructure and Degradation of the Ni/YSZ Electrode”, Journal of the Electrochemical Society, submitted. 
+
+Jensen S.H., Larsen P.H., and Mogensen M., (2007), “Hydrogen and synthetic fuel production from renewable energy sources”, International Journal of Hydrogen Energy, 32, in press. 
+
+Larminie J., and Dicks A., (2003), “Fuel Cell Systems Explained”, 2nd Ed. John Wiley & Sons, p 371. 
+
+Web site:http://www.hi2h2.com
+
+Project coordinator name: Mohsine ZAHID (EIfER) 
+
+Partners

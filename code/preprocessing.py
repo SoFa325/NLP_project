@@ -44,6 +44,7 @@ def calculate_homonymy_percentage(text: str) -> float:
     return percentage
 
 
+"""
 #здесь пример использования
 with open('tgt.txt', 'r', encoding='utf-8') as file:#откуда
     text = file.read()
@@ -53,3 +54,4 @@ with open('res.txt', 'w', encoding='utf-8') as output_file:#куда
         print(colored(f"Слово: {word}", "blue"), colored(f"Омонимий: {len(pos_tags)}", "green"), colored(f"Части речи: {pos_tags}", "cyan"))
 
     #print(calculate_homonymy_percentage(text))
+"""

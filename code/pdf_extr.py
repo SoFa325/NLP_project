@@ -6,9 +6,10 @@ import pandas as pd
 from pathlib import Path
 from pypdf import PdfReader
 from pdf2image import convert_from_path
-from gensim.models import Word2Vec, KeyedVectors
 from sklearn.metrics.pairwise import cosine_similarity
-import spacy
+from gensim.models import KeyedVectors
+import preprocessing
+import vec_model
 
 KEYWORDS = [
     'figure', 'fig', 'diagram', 'schematic', 'layout', 'overview',
@@ -16,78 +17,15 @@ KEYWORDS = [
     'presents', 'indicates', 'displays', 'visualizes',
 ]
 
-
-def preprocessing(text: str) -> str:
-    nlp = spacy.load('en_core_web_sm')
-    doc = nlp(text)
-    filtered_tokens = []
-    for token in doc:
-        if token.is_punct or token.is_space or token.is_stop or token.text == ":" or token.text == "":
-            continue
-        if re.match(r"([a-zA-Z0-9]|.|,)+", token.text):
-            filtered_tokens.append(token.text.strip())
-    return ' '.join(filtered_tokens)
-
-def lemmatization(text: str) -> str:
-    nlp = spacy.load('en_core_web_sm')
-    doc = nlp(text)
-    lemmatized_tokens = [token.lemma_ for token in doc]
-    return ' '.join(lemmatized_tokens)
-
-def load_documents(directory):
-    documents = []
-    filenames = []
-    for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
-            with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
-                text = f.read()
-                tokens = lemmatization(preprocessing(text)).split()
-                tokens = text
-                documents.append(tokens)
-                filenames.append(filename)
-    return documents, filenames
-
-def load_raw_documents(directory):
-    documents = []
-    filenames = []
-    for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
-            with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
-                text = f.read()
-                tokens = text.lower().split()
-                documents.append(tokens)
-                filenames.append(filename)
-    return documents, filenames
-
-def train_word2vec(documents):
-    model = Word2Vec(
-        documents,
-        vector_size=100,
-        window=5,
-        min_count=2,
-        workers=4,
-        epochs=50
-    )
-    return model
-
-def save_word2vec_model(model, filepath_bin):
-    model.wv.save_word2vec_format(filepath_bin, binary=True)
-    print(f"Модель сохранена в {filepath_bin}")
-
-def load_word2vec_model(path):
-    global model
-    model = KeyedVectors.load_word2vec_format(path, binary=True)
-    print("Word2Vec model loaded")
+def keyword_density(text):
+    words = text.lower().split()
+    count = sum(word in KEYWORDS for word in words)
+    return count / (len(words) + 1e-5)
 
 def sentence_vector(sentence):
     words = sentence.lower().split()
     vectors = [model[word] for word in words if word in model]
     return np.mean(vectors, axis=0) if vectors else np.zeros(model.vector_size)
-
-def keyword_density(text):
-    words = text.lower().split()
-    count = sum(word in KEYWORDS for word in words)
-    return count / (len(words) + 1e-5)
 
 def clean_figure_caption(caption: str) -> str:
     caption = re.sub(r'\bFig\.\s*(\d+)\b', r'Figure \1', caption)
@@ -108,7 +46,7 @@ def is_significantly_different(new_rect, existing_rects, threshold=0.85):
 
         if x2 >= x1 and y2 >= y1 and x2 + w2 <= x1 + w1 and y2 + h2 <= y1 + h1:
             print("🔄 Replacing smaller existing box with larger one")
-            continue  
+            continue
 
         dx = min(x1 + w1, x2 + w2) - max(x1, x2)
         dy = min(y1 + h1, y2 + h2) - max(y1, y2)
@@ -147,8 +85,8 @@ def merge_close_boxes(boxes, gap):
         x1, y1, w1, h1 = b1
         x2, y2, w2, h2 = b2
         return not (
-            x1 + w1 + gap < x2 or x2 + w2 + gap < x1 or
-            y1 + h1 + gap < y2 or y2 + h2 + gap < y1
+                x1 + w1 + gap < x2 or x2 + w2 + gap < x1 or
+                y1 + h1 + gap < y2 or y2 + h2 + gap < y1
         )
 
     merged = boxes[:]
@@ -183,7 +121,7 @@ def merge_close_boxes(boxes, gap):
 
 def extract_images_from_pdf(pdf_path: Path, image_output_folder: Path, image_pdf_output_folder: Path) -> list:
     images = []
-    images_pil = convert_from_path(str(pdf_path), poppler_path=r'D:\Code\poppler-24.08.0\Library\bin')
+    images_pil = convert_from_path(str(pdf_path), poppler_path=r'../poppler-24.08.0/Library/bin')
     doc_name = pdf_path.stem
     os.makedirs(image_output_folder, exist_ok=True)
     os.makedirs(image_pdf_output_folder, exist_ok=True)
@@ -198,7 +136,7 @@ def extract_images_from_pdf(pdf_path: Path, image_output_folder: Path, image_pdf
 
         thresh_path = image_pdf_output_folder / f"{doc_name}_thresh_page{page_num + 1}.png"
         cv2.imwrite(str(thresh_path), thresh)
-        
+
         contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         rects = [cv2.boundingRect(cnt) for cnt in contours if cv2.contourArea(cnt) > 35000]
@@ -228,7 +166,7 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
     figures_and_descriptions = []
     image_idx = 0
 
-    used_figures = set() 
+    used_figures = set()
 
     for page_num, page_text in enumerate(text_pages):
 
@@ -307,6 +245,8 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
                 'figure': caption,
                 'image_file': images[image_idx]["image_filename"],
                 'next_sentences': description.strip()
+                #TODO ???
+                #'graph':
             })
 
             image_idx += 1
@@ -354,27 +294,56 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
     print(f"Results saved to {csv_filename}")
 
 
-# Обучение модели
-# Загружаем необработанные документы
-docs, _ = load_raw_documents(r"D:\Code\nlp\PDFFiles\TXT_from_docx")
-
-# Обучаем модель
-w2v_model = train_word2vec(docs)
-
-# Сохраняем
-save_word2vec_model(w2v_model, "word2vec.bin")
-
-# Загружаем перед запуском анализа PDF
-load_word2vec_model("word2vec.bin")
 
 
-pdf_input_folder = Path(r"PDFFiles\Files")
-output_html_folder = Path(r"PDFFiles\HTML")
-image_output_folder = Path(r"PDFFiles\Cropped_Images2")   # Директория для сохранения изображений
-image_pdf_output_folder = Path(r"PDFFiles\PDF_to_IMG") 
-csv_output_folder = Path(r"PDFFiles\CSV") 
+
+
+
+"""
+def load_documents(directory):
+    documents = []
+    filenames = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
+                text = f.read()
+                tokens = preprocessing.lemmatization(preprocessing.preprocessing(text)).split()
+                #tokens = text
+                documents.append(tokens)
+                filenames.append(filename)
+    return documents, filenames
+"""
+def load_raw_documents(directory):
+    documents = []
+    filenames = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
+                text = f.read()
+                tokens = preprocessing.lemmatization(preprocessing.preprocessing(text)).split()#text.lower().split()
+                documents.append(tokens)
+                filenames.append(filename)
+    return documents, filenames
+
+def load_word2vec_model(path):
+    global model
+    model = KeyedVectors.load_word2vec_format(path, binary=True)
+    print("Word2Vec model loaded")
 
 def extract_texts_from_folder(pdf_folder: Path, output_folder: Path, image_output_folder: Path, image_pdf_output_folder: Path, csv_output_folder:Path):
+    # Обучение модели
+    # Загружаем необработанные документы
+    docs, _ = load_raw_documents(r"../PDFiles/Result/TXT_from_docx")
+
+    # Обучаем модель
+    w2v_model = vec_model.train_word2vec(docs)
+
+    # Сохраняем
+    vec_model.save_word2vec_model(w2v_model, "word2vec.bin")
+
+    # Загружаем перед запуском анализа PDF
+    load_word2vec_model("word2vec.bin")
+
     os.makedirs(output_folder, exist_ok=True)
     pdf_files = list(pdf_folder.rglob("*.pdf"))
     print(f"Найдены {len(pdf_files)} PDF файлы в {pdf_folder}")
@@ -382,11 +351,3 @@ def extract_texts_from_folder(pdf_folder: Path, output_folder: Path, image_outpu
     for pdf_path in pdf_files:
         output_html = output_folder / f"{pdf_path.stem}_figures.html"
         extract_figures_and_descriptions(pdf_path, output_html, image_output_folder, image_pdf_output_folder, csv_output_folder)
-
-extract_texts_from_folder(
-    pdf_input_folder,
-    output_html_folder,
-    image_output_folder,
-    image_pdf_output_folder,
-    csv_output_folder
-)

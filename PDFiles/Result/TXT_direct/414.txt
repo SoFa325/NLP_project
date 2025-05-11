@@ -1,0 +1,280 @@
+1  HYDROGEN PRODUCTION BY HIGH TEMPERATURE ELECTROLYSIS OF  WATER VAPOUR AND NUCLEAR REACTORS 
+  Jean-Pierre Py (AREVA NP) – Alain Capitaine (EDF) 
+  Abstract 
+ 
+  This paper presents hydrogen production by a nuclear reactor (High Temperature Reactor,  HTR or Pressurized Water Reactor, PWR) coupled to a High Temperature Electrolyser (HTE) plant. With respect to the coupling of a HTR with a HTE plant, EDF and AREVA NP  had previously selected a combined cycle HTR scheme to convert the reactor heat into  electricity. In that case, the steam required for the electrolyser plant is provided either directly  from the steam turbine cycle or from a he at exchanger connected with such cycle.  Hydrogen efficiency production is valued usin g high temperature electrolysis. Electrolysis  production of hydrogen can be performed with significantly higher thermal efficiencies by operating in the steam phase than in the water phase. The electrolysis performance is  assessed with solid oxide and solid proton electrolysis cells.  The efficiency from the three operating conditions (endo-thermal, auto-thermal and thermo- neutral) of a high temperature electrolysis process is evaluated. The technical difficulties to use the gases enthalpy to heat the water are analyzed, taking into account efficiency and technological challenges.   EDF and AREVA NP have performed an analysis to select an optimized process giving consideration to plant efficiency, plant operation, investment and production costs. The paper provides pathways and identifies R&D actions to reach hydrogen production costs competitive with those of other hydrogen production processes. 
+  Introduction 
+  The challenging target of large hydrogen production with a competitive cost can be solved  with nuclear energy. This paper describes how an electrolysis process could be linked with  the secondary part of a nuclear reactor. 
+  In the following part the efficiency for the three operating conditions (endo-thermal, auto-thermal and thermo-neutral) and two possible electrolyser technology are assessed (solid oxide and solid proton electrolysis cells). Finally, results of an economical study are provided  for different variables and hypotheses related to electrolyser, allowing comparison of  hydrogen production costs obtained by high temperature electrolysis and other processes. 
+ 
+  1. INTEREST OF HIGH TEM PERATURE ELECTROLYSIS (HTE) 
+  1.1   With respect to Steam Methane Reforming (SMR) 
+  Steam methane reforming (SMR) is the most currently used and commercialized process to produce large quantities of hydrogen. In this process, natural gas reacts with steam in the  presence of a nickel catalyst in the reactor. The reaction product is a mixture of hydrogen  and carbon monoxide. In order to obtain pure hydrogen, purification downstream of the SMR plant is necessary to remove undesired compounds such as carbon dioxide.  Based on higher heating value (HHV) of hydrogen, SMR efficiencies are in the range of 65 to  85 percent. Hydrogen production cost is directly proportional to gas price, very unpredictable. 
+  1.2 With respect to alkalin e water electrolysis (AWE) 
+   2 
+  Electrolysis of water is the most widely us ed means to produce hydrogen of high purity.  Should electricity be provided by renewable energies (hydro, wind, solar) or nuclear power,  hydrogen could be obtained without Green House Gas (GHG) emission.  Conventional electrolysis, or alkaline water electrolysis, is a mature technology since  decades and has efficiencies in the range of 70 to 80 percent. The working pressure of electrolysis is between normal pressure and medium pressure (10 to 30 bar presently).  Alkaline water electrolysis is striving to obtain higher efficiency by increasing operating  temperature or pressure. Higher pressure electrolysis is thought to be advantageous for future application because many processes which use hydrogen are operated at high pressure; therefore, additional compression energy is saved. The specific consumption of electricity of the process of electrolysis is reduced at higher pressure. Energy requirements  of conventional electrolysers vary according to commercial available electrolysis systems  between 4.3 and 4.9 kWh el/Nm3 H2. 
+  Besides alkaline water electrolysis another development is in progress. The proton exchange membrane (PEM) is used as an electrolyte instead of aqueous solutions of alkaline electrolysis. The membrane electrolysis uses a proton conducting membrane. This solid polymer electrolyte water electrolysis can be operated at higher current densities due to  volume reduction compared to cells with potassium hydroxide-electrolyte. Typical operation  temperatures are 50 to 150 °C, preferably below 100°C for acceptable lifetime, which is a limiting for this technology. The requirement of electricity should be reduced; values below 4  kWh el/ Nm3 H2 are envisioned. PEM is considered a promising method. However, high  component cost still remains the major drawback of this technology. 
+ 
+  2. PRINCIPLES OF HIGH TEMPERATURE ELECTROLYSIS (HTE) 
+  Another principle of electrolysis being considered is the high temperature electrolysis (HTE).  The key to the HTE process is operation at high temperature so as to reduce the electrochemical over voltage imposed at the electrodes. Operating temperatures in the range  of 800 to 1000 °C would offer the advantage of smaller specific electricity requirement than  conventional electrolysis; values ranging from 2,6 to 3 kWh el/ Nm3H2 are expected. To  achieve high temperature in the process, water is provided as high temperature superheated  steam. The necessary electricity input is reduced corresponding to the variation of cell voltage versus temperature (figure 1). The heat for steam production to supply the cells must be added. Current density acceptable by the HTE cell is a function of the temperature of  operation and materials used for the Membrane Electrode Assembly (MEA).  The upper temperature limit for economical HTE is set by the materials of the HTE cell. 
+  Ion O2- conduction electrolysis 
+  The electrolyte presently considered for this technology is of the same type as the electrolyte  used for Solid Oxide Fuel Cells (SOFC), using zirconia stabilized with yttrium oxide (YSZ).  Presently the target operating temperature of O2- conduction HTE cells is 850°C. Figure 2a  illustrates the operation of O2- electrolysis. 
+  Hydrogen is produced at the cathode with a fraction of steam flow not dissociated; therefore it must be separated from the residual steam. 
+ 
+ 
+ 
+ 
+   3  Proton H+ conduction electrolysis 
+  The electrolyte for this technology must meet conductivity requirements at the presently  envisaged operating temperature of H+ conduction HTE cells of 500°C. A joint research R &  D program between AREVA and CNRS/IEM is dedicated at the development and  characterization of appropriate EMA able to operate at such temperature without any conductivity defect in time. (see paper n° …. presented at this conference). Figure 2 b  illustrates the operation of H
++ electrolysis.  One of the most attractive benefits of this type of electrolysis is to obtain pure hydrogen at the cathode. An other advantage of the proton HTE is that it allows to use the HTR steam cycle as heat source. Materials having satisfactory conduction are being developed and still require important development work to reach industrial scale of fabrication. 
+  Operating modes of an electrolyser 
+  An electrolyser operating mode is characterized by the inlet steam and gas outlet temperatures. The three possible operating modes are : 
+ 
+• The thermo-neutral mode 
+  In this mode the energy input to the electrolyser exactly matches the energy necessary to split the water molecule at the selected operating temperature. Thus, the gas outlet temperatures are the same as the steam inlet temperature. The main interest of this mode is  to operate the electrolyser under a homogeneous internal temperature, resulting in less  constraints within the thin ceramic Membrane Electrode Assembly (MEA).  
+ 
+• The auto-thermal mode 
+  In this mode the energy input to the electrolyser exceeds the energy necessary to split the water molecule at the selected operating temperature. Thus, the gas outlet temperatures are higher than the steam inlet temperature. The electric power supplied to the electrolyser  provides the excess energy released by Joule effect. 
+ 
+• The endo-thermal mode 
+  In this mode the energy input to the electrolyser is less than the energy necessary to split the  water molecule at the selected operating temperature. Thus, the gas outlet temperatures are lower than the steam inlet temperature. 
+ 
+  3. COUPLING OF HTE WITH A NUCLEAR REACTOR 
+  3.1 Heat supply and associated temperature and pressure 
+  For a nuclear-powered HTE plant, a nuclear reactor is to provide the heat to produce high temperature steam and electricity for the electrolysis.  
+  3.2 Where could the heat be extracted from ? 
+  For a given type of reactor the heat necessary for steam production to supply the HTE cells can be extracted from different points. The flow rate, temperature and pressure of the heat  carrying fluid must be adapted to the selected HTE operating conditions. The heat  transported by the gases produced by the HTE cells is first recuperated to raise the 
+   4  temperature of the feed water from ambient to boiling conditions, then to superheat the  steam up to operating temperature of the HTE cells. 
+  3.2.1 Heat extraction in the case of a PWR : 
+ 
+• From the main steam header at 280 °C (figure 3) 
+  Heat is extracted in the form of steam from the main steam header of a PWR at 64 bar and 280 °C. The steam condenses in the primary side of a steam transformer at the same  temperature. The water fed at 5 bar on the secondary side, the corresponding saturation temperature of which is 152 °C, is evaporated at the same temperature. Only two percent (i.e. 28 kg/s) of the main steam flow rate is sufficient to provide the required heat to produce 22.5 N m 3 H2/s. The required heat transfer surface necessary to produce such a steam flow  rate would be of the order of 130 m2. The steam transformer operates as a condenser on the  primary side and as steam generator on the secondary side. 
+ 
+• From the low pressure turbine stage at 180 °C (figure 4) 
+  The heat is extracted in the form of steam from the low pressure turbine stage of a PWR at 10 bar and 180 °C. The steam condenses in the primary side of a steam transformer at the same temperature. The water is evaporated on the secondary side at the same pressure and saturation temperature as above (5 bar, 152 °C). The required heat transfer surface would be more than four times larger in this case than in the previous one. 
+  3.2.2 Heat extraction in the case of the ANTARES HTR 
+  In the case of the ANTARES combined cycle HTR developed by AREVA, the heat could  either be extracted from the secondary gas loop or from the tertiary steam turbine cycle (see  figure 5). Previous studies have shown that the later solution is preferable for an overall  efficiency of the plant. 
+  Two designs were explored, both allowing to bleed steam from the steam turbine cycle of the HTR ANTARES combined cycle : 
+ 
+ Design A : The steam feeding the electrolyser is directly extracted from the steam  turbine cycle of the combined cycle HTR. The gases produced by the electrolyser  exchange there latent heat with the feed water from the steam turbine cycle to preserve the efficiency. 
+ 
+ Design B : Heat is extracted from the steam turbine cycle of the nuclear plant through a  specific heat exchanger supplying saturated steam on the secondary side. This steam is then superheated within the electrolysis plant by recovering the heat of the electrolysers outlet gases. The main advantage of this design is to separate the specific water used into the electrolyser from the water used into the steam turbine cycle. 
+ 
+ 
+ 
+ 
+▪ Design A : 
+  In this design the steam quality is considered sufficient to directly feed the electrolyser. The remaining available steam drives the turbine which produces the electricity supplying the electrolyser. For a given reactor outlet temperature, the hydrogen efficiency production 
+   5  depends upon the three possible operating modes of the electrolyser (endo-thermal, thermo- neutral and auto-thermal). 
+  However, efficiency is not the unique target to select a design or an operating mode. Many  other criteria must be taken into account such as the temperature, the electrolyte material,  the ancillary facilities in operation, the investment cost, etc … 
+  The scheme on figure 6 shows the design arrangement with steam extraction upstream the  medium pressure turbine. 
+  The hydrogen produced is directed towards dedicated storages, away from the plant; the oxygen can either be directly released to the atmosphere or used in industrial processes. The excess of water used into the electrolyser is recycled into the steam turbine cycle, after  degassing to prevent incondensable gas ingress to prevent corrosion.  The electrolysis efficiency depends upon many parameters. The electrolys is efficiency is the  ratio between (Hydrogen energy produced per second) / (Primary Energy required to produce hydrogen). The efficiency varies according to the electrolyser operating mode. The highest efficiency is obtained with auto-ther mal mode; however, the thermo-neutral mode is  preferable because the inlet steam and outlet gas temperatures being the same the thermal constraints to the electrolyser components are reduced. 
+ 
+▪ Design B : 
+  In this design the superheated steam feeding the electrolyser is produced by heat exchangers recovering the heat of the gases produced. The preferable electrolyser operation mode being the thermo-neutral mode, the optimal coupling scheme with the ANTARES HTR is obtained by extraction of steam from two different points in the HTR steam cycle : 
+ 
+• 
+• Upstream the high pressure steam turbine, to provide the heat necessary to evaporate  the water at low pressure (5 bar) to be electrolysed; 
+ Upstream the low pressure steam turbine, to provide the heat necessary to superheat  up to 500 °C the steam to be electrolysed. 
+  For a plant producing 81000 t of hydrogen per year, equipped with HTE having specific electricity consumption of 3.2 kWh/Nm 3 H2 and operating in the thermo-neutral mode, the  required energy for the electrolysis plant are 257 MWe as electricity and 53.7 MWth as heat to vaporize the water under 5 bar at 152°C and 5.3 MWth as heat to superheat the steam. 
+ 
+  4. RESULTS OF EDF AND AREVA NP STUDIES 
+  4.1 EDF study 
+  In EDF study, the steam quality is considered sufficient to directly feed the electrolyser. This design is quite interesting because it uses the demineraliser facility of the nuclear plant to produce the water to be electrolysed. The steam production for the electrolysers does not  require any exchanger because the steam is directly extracted from the steam turbine cycle.  This solution is beneficial in terms of efficiency (no heat exchanger required) and investment cost. This design allows to reach a steam te mperature close to 560°C; higher temperatures  could be obtained by extracting heat at the outlet of the Intermediate Heat Exchanger of the HTR through a dedicated heat exchanger.  The selected operating mode of the electrolyser is the thermo-neutral mode for efficiency reason and operation of the electrolyser under a homogeneous internal temperature, resulting in less constraints within the thin ceramic Membrane Electrode Assembly (MEA). 
+   6 
+ 
+  4.2 AREVA NP study 
+  The whole interest of the auto-thermal mode is to allow superheating of the steam up to  500°C with the gas produced by the electrolyser. The external heat (via steam produced by a HTR or PWR reactor) can thus be supplied at temperatures lower than 200 °C and can be used to evaporate the water into steam to be dissociated in the electrolyser. The  thermodynamic study of the cycle has allowed validating the hypothesis of operation in the  auto-thermal mode. Optimisation of the sets of heat exchangers ( ∆Ts and heat transfer  areas) has lead to the general scheme in figure 7. Results of the study of the different modes of operation of the electrolysers are summarized in the following table : 
+ 
+ Mode of operation 
+ Auto-thermal Thermo-neutral Endo-thermal  Extraction points on the steam cycle One : High pressure Two : High pressure,  low pressure Two : High pressure, low pressure  Electric power requi-red for the HTE 261 MWe 257 MWe 253 MWe  Thermal power required for the HTE 53.7 MWth 53.7 MWth 
++ 5.3 MWth 53.7 MWth 
++ 10.57 MWth  HTR net electric output ~ 271.5 MWe ~ 268.75 MWe ~ 266.9 MWe  HTR plant electric efficiency 1 45.25 % 44.79 % 44.45 %  Hydrogen plant global efficiency 2 41,60 % 41,83 % 42,16 % 
+ 
+  5. ASSESSMENT OF HYDROGEN PRODUCTION COSTS 
+  5.1 Steam Methane Reforming (SMR) 
+  Hydrogen production capacities, assuming stationary use, are mostly in the range of over 45 000 Nm 3-H2/hour. The specific investment costs (i.e. capital investment cost (in € ) divided by  hydrogen plant capacity (in kW), are in the range of 210 to 260 € / kW . Operation and  maintenance (O&M) cost are comprised between one and two € / GJ. SMR technology has  the least-expensive investment cost in compar ison to other fossil fuelled hydrogen production  methods. 
+  5.2 Alkaline water electrolysis (AWE) 
+  Hydrogen production cost by AWE has been calculated with the following assumptions : 
+ 
+• 
+• 
+• 
+• 
+                        Annual hydrogen production capacity : 638 600 x 106 Nm3  Capacity factor : 90 %  Plant lifetime : 20 years  Capital cost : 500 € / kW 
+  1 Electric efficiency de fined as the ratio of the HTR net electric output to the reactor thermal power, i.e.  286,5/600  2 H2 plant global efficiency defined as the ratio of : [H2 production flow rate (kg/s) x H 2 LHR (120 MJ/kg)] by 
+[the electric power requirement of the electro lyser (MWe) x HTR plant electric efficiency] 
+   7  Annual operating and maintenance costs : • 
+• 
+• 
+• o Fixed costs : 10 % of th e initial p lantinvestment  o Variable costs : 0.02 € / Nm3  Specific ele ctricity consumption : 4.7 kWh / Nm3 H2  Electricity cost : variable (base case : 35 € / MWh) ; escalation rate : 1 % / yr)  Discount rat e : 8 % / yr 
+  Hydroge n produc tion cost Delivery pressure : 200 b ar Operation InvestmentElectricity  Consum ptionCompression 0,000,501,001,502,002,503,003,50 100production cost
+(€/kg)
+  In this ca se electricity consumption represents a bout 70 % o f the hydrogen productio n costs. 
+  5.3 High Temperature Electrolysis (HTE) 
+  Hydrogen production co st by HTE H+ coupled with an ANTARES HTR module of 600 MWth   has been calculated with the following assumptions : 
+  Annual hydrogen production capacity : 638 600 x 106 Nm3 • 
+• 
+• 
+• 
+• 
+• 
+• 
+• Capacity factor : 90 %  Plant lifetime : 20 years  Capital cost : variable according to HTE cells cost, not yet manufactured on an industrial  scale  Annual operating and maintenance costs :  o Fixed costs : 10 % of th e initial p lant investment  o Variable cos ts : 0  Specific ele ctricity consumption : 3.2 kWh / Nm3 H2  Electricity cost : 35 € / MWh  Discount rat e : 8 % / yr 
+  In the evalu ation of HT E for h ydrogen productio n, the most sensitive parameters are the cost  and lifetime duration of t he HTE cells. 
+  HTE cell costs can pre sently be assessed on ly by comparison with fuel cells costs which  have not yet reached an industrial production stage. It is expected that when prod uced on  large scale f uel cell cost s should drop by a factor of 10 at l east from present costs for R&D  application s (20 000 €/kW). For the purpose of t his study a range of 2000 to 200 €/ kW was  assumed for electrolysis cells, corresponding to a range of 11 000 to 1000 €/ electroly sis cell. 
+ 
+   8  012345 0 1 2 3 4 5 6 7 8 9 10 11 12  HTE cell cost (k€)Produc tion cost (€/kg)HTE cell life time : 5 yrs HTE cell life time :20 years
+ Hydrogen produc tion cost as a function of HTE cell cost and life duration
+ 
+  5.4 Comparison of HTE efficiencies 
+  The following figures sh ows the HT E efficiencie s obtained for O2- and H+ electrolysis in the  three operating modes : 
+ 
+ 
+ Proton (H+) electrolysis efficiency 
+ 
+ 
+ 
+  PROTONIC ELECTROLYSIS EFFICIENCY 0.3950.40.4050.410.4150.420.4250.430.435 allothermal thermoneutral autothermal MOD EVALUEEHT efficiency VHTR efficiency 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   9 
+ 
+ 
+ Oxide (O 2-) electrolysis efficiency 
+ 
+ 
+ 
+ 
+ OXIDE EL ECTROLYSIS EFFICIENCY 0.390.3950.40.4050.410.4150.420.4250.430.435 allothermal thermoneutral autothermal MOD EEFFICIENCY EHT efficiency VHTR efficiency 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  6 CONCLUS IONS 
+  HTE technolog y • 
+• 
+•  This study has shown that hydrogen production by H+ electrolysis seems more attra ctive  than by O2- electrolysis because it s operating range is lower (500°C to 600°C versus  850°c and above) a nd it produces pure hydrogen at the catho de. However, the  competitiv eness of H+ HTE with re spect to oth er processe s remains to be confirmed. 
+  Coupling of a HTE plant w ith a nuc lear reactor 
+  o The electrical part of the total energy supplied is predominant (260 MW el versus 60  MW th of heat ). The heat is merely used to vaporize the water at low temperature (54  MW th at 152 °C) and possibly to supe rheat the ste am (6 MW th at 500 °C).  o The couplin g of a HTE plant with a PWR is possible in the auto-the rmal operating  mode (vap orization of water only), or in the other mo des, provided that ste am  superheatin g is performed by a sma ll auxiliary heat source ( e.g. an elect ric boiler). 
+  Competitiveness 
+  Although it features a lower specific ele ctricity consu mption than AWE, HTE is  conceivable only with a very cheap cost of elect ricity such as from nuclear power p lants,  which absen ce of Green House Gases reinforce t he interest.  
+   10  Figure 1 : Electrical energ y required to dissociate w ater versus temperature 
+ 
+ 
+ 
+ 
+ 
+  ∆ H (k J/mol)  Temperature (°C)=Electricity = Heat H+ conduction Low Temp. O2- conduction  Process Heat300  T∆S  250  200 
+∆G  150  0   20  40    60   80  100     4 00     700    1000
+   11  Figure 2a : Principle of High Te mperature Electrolysis w ith O2- conduction 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 2-2O+
+ 2 2H→ - 2  O+ 4 eCathode 
+   2H -+ 4 e2O 2O 2-
+ →Anode 2O
+ Extern al Circuit I
+ -e -e
+ 2H O2H
+ 
+  Figure 2b : Principle of High Te mperature Electrolysis w ith H+ conduction 
+ 
+ 
+  Anode  
+   2H 2 O→ O2+ 4 e- + 4H+  Cathode 
+        4 H++ 4 e- → 2H 2 Extern al  Circuit O2  I H2O  e-  e-  H2 
+   12  Figure 3 
+  Principle of coupling of a HTE plant w ith a PWR 
+  Heat extraction from th e main steam header 
+ 
+ 
+  EHT  plant PWR plant  steam  280° C X v= 038kg/s Xv=1 SteamSteam Transfo rmer Transfo rmer Reheater s Reheater sLPLP HPHP SGSG Condense r Condense r280° C  64 bar  1608 k g/s  1574 kg/s 152° C  5 bar  28 kg/s 
+ 226° C  68 bar  152° C  5 bar  28 kg/s water  Hydrogen Water Steam Oxygen+st eam 
+   13  Figure 4 
+  Principle of coupling of a HTE plant w ith a PWR 
+  Heat extraction from the lo w pressure turbine 
+  Condens erSGHP LP Reheat ersSteam  Transf ormer Condens erSGHP LP Reheat ersSteam  Transf ormer280° C  64 bar  1608 k g/s 1581 k g 180° C  10 bar - 29kg/s 152° C  5 bar - 28 kg/s EHT  plantPWR plant 
+ 152° C 
+ 5 bar  
+ 28 kg/s 
+   14  Figure 5 
+  Possible heat extraction poi nts from the A NTARES HTR 
+ 
+ High Temp.  Process He at
+~550 to 800CPrimar y Loop  
+  600 MW t  Reactor Gas  Cycle IHX Circulator Gas  turbine  S.G.
+He Med. Temp.  Process He at
+~250 to 550C Condens er Steam  CycleHe or N 2/He Water/stea m Low Temp.  Process He at
+~30 to 250CGenerator 
+   15  Figure 6 
+  Steam extraction from the ANTARES HTR upstream the medium pressure  turbine 
+ 
+ 
+ 
+  A  B  A  B Q+ Réacteur 600MW  850°C 800°C  565°C circuit prima ire Hélium  circuit secon daire He-N2  circuit tertiaire eau IHX  Chaudière  circuit de refroidis sement Electrolyseu r 
+ Steam extrac tion
+   16  Figure 7 : Flow sheet of HTE coupled w ith a HTR 
+ 
+ 
+ 
+ Water   25°C   5 bar 
+ 
+ EHT
+ 261 MW élH2, 2 kg/s  560°C H2O, 28 kg/ s  500°C 
+ O2+H 2O 
+ 560°C 500°C 
+ 500°C 
+  H2  70°C  5 bar 
+ Reheater 
+ Cooler Reheater Superheate r 
+ Superheate r
+  O2    70°C    5 bar 
+ 
+ Evapora ter  54 MW th 152°C 
+ 152°C 
+ 
+         Nuclear reactor

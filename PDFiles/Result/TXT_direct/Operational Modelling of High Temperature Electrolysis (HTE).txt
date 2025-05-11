@@ -1,0 +1,181 @@
+Operational Modelling of High Temperature Electrolysis (HTE) 
+  Patrick Lovera a, Franck Blein b, Julien Vulliet b, 
+  a Commissariat à l'Energie Atomique, Direction de l'Énergie Nucléaire, Département de Physico -  Chimie, Centre de Saclay, F-91191 Gif sur Yvette, Cedex ; e-mail: patrick.lovera@cea.fr   b Commissariat à l'Energie Atomique, Direction des A ffaires militaires, Département Matériaux, Centre  du Ripault, BP 16, F-37260 Monts; e-mails: franck.blein@cea.fr , julien.vulliet@cea.fr  
+ 
+ 
+  ABSTRACT: 
+  Solid Oxide Fuel Cells (SOFC) and High Temperat ure Electrolysis (HTE) work on two opposite  processes.  The basic equations (Nernst equation, corrected by a te rm of over-voltage) are thus very similar, only  a few signs are different. An operational model, ba sed on measurable quantities, was finalized for HTE  process, and adapted to SOFCs. The model is analytical, which requires some complementary  assumptions (proportionality of over-tensions to th e current density, linearization of the logarithmic  term in Nernst equation). It allows determining hydrogen production by HTE using a limited number of parameters.  At a given temperature, only one macroscopic parame ter, related to over-voltages, is needed for  adjusting the model to the experimental results (S OFC), in a wide range of hydrogen flow-rates. For a  given cell, this parameter follows an Arrhenius law with a satisfactory precision.  The prevision in HTE process is compared to the available experimental results. 
+ 
+  KEYWORDS
+ : Operational modeling, SOFC, HTE. 
+ 
+ 
+  Hydrogen consumption in a Solid Oxide Fuel Cell (SOFC) and hydrogen production by High Temperature Electrolysis (HTE) are two opposite processes: 
+ 
+- SOFC: formation of water steam from hydrogen and oxygen, according to reaction (R1); the reaction  is exothermic and spontaneous, it produces electrical and thermal energy. The irreversibilities  decrease the available voltage at the boundaries of the cell 
+ - HTE: formation of hydrogen and oxygen from water, according to reaction (R2); the reaction is  conversely endothermic and non spontaneous. Thus, it is necessary to supply electrical and  thermal energy. The irreversibilities increase the electrical energy to be supplied to the electrolyzer. 
+  The behaviour of both reactors (electrolysis cell or fuel cell) is mainly based on Nernst equation, which  correlates the Gibbs free energy ΔG and the electromotive force of a chemical system. 
+ Applied to both reactions Nernst equation reads: 
+  SOFC: 
+(R1): H 2 gas + ½ O 2 gas Î H2Ovap , HTE: 
+(R2): H 2Ovap Î H2 gas + ½ O 2 gas 
+⎟⎟⎟
+⎠⎞
+⎜⎜⎜
+⎝⎛
+−°= 2OP 2HPO2HP Ln F2TR(R1)E E(R1) 
+(1) ⎟⎟⎟
+⎠⎞
+⎜⎜⎜
+⎝⎛
+−°= O2HP2OP 2HP Ln F2TR(R2)E E(R2) 
+(2) 
+ 
+: 
+    where E is the electromotive force (in V), E° the st andard electromotive force (in V) and P the pressure 
+(in bar). E is correlated to the Gibbs free energy ΔG of reaction (R1) by  F2ΔG(R1)E(R1)−= . Similarly,  F2(R1)ΔG(R1)E°−=° .   As reaction (R1) is spontaneous, ΔG(R1) < 0 and E(R1) >0. 
+  Considering that E(R2) = - E(R1), one can observe th at both equations (1) and (2) can be written on a  unique manner, provided that the orientation of the in tensities in the main circuit are taken opposite. 
+ 
+⎟⎟⎟
+⎠⎞
+⎜⎜⎜
+⎝⎛
++°= O2HP2OP 2HP Ln F2TREE    (3) 
+  where E° is taken positive in all cases. E° only depends on temperature. 
+ However, Nernst equation is valid when no current crosses the electrolyte, i.e. no hydrogen is  produced (HTE) or consumed (SOFC). As soon as a current circulates in the electrolyte, some  irreversibilities occur. 3 types of over-voltages can be pointed out: 
+ 
+- Ohmic over-voltage, due to the passage of current in resistive materials (anode, electrolyte, cathode) 
+ 
+- Activation over-voltage, due to the formation of ac tivated complexes during partial semi-reactions at  the electrodes, described by Volmer - Butler equation 
+ 
+- Concentration over-voltage, due to the fact that the real concentrations to be used in Nernst equation  are concentrations at the interface electrode - el ectrolyte, and the measured concentrations are  bulk concentrations.  The last type of over-voltage is a mathematical ar tefact, the first two ones are real over-voltages,  producing a local waste power by Joule effect.  We aim to develop an operational model, i.e. a model only based on macroscopic quantities. 
+  A complementary notation: 
+ On the hydrogen side, it may be noticed that one mole of hydrogen replaces (or is replaced by) exactly  one mole of water. Hence, the pressure is const ant along the course of the gases. We introduce ξ,  which is the transformation rate of H 2 into H 2O (or opposite), and we get: 
+ 
+- in the case of HTE : ξP P 2H°=  and ξ) P PO2H−°= 1( 
+- in the case of SOFC: ξ) P P 2H−°= 1( and ξP PO2H°= 
+  where P° is the initial pressure init O2Hinit 2HP P P +=°  inξ and outξ are respectively the transformation rates at the inlet and at the outlet of the cell. 
+  Experimental conditions   The characteristics of the cell are: 
+- Electrolyte thickness: 140 µm   Electrolyte material: zirconia doped with yttrium oxide (3% w/w) 
+- Anode thickness: 40 µm    Anode material: gadolinium-doped ceria 
+- Cathode thickness: 60 µm   Cathode material: strontium-doped lanthanum manganate - Active area:  70 or 98,5 cm² 
+  The cell is supplied with 300 ml.min-1 of N 2 (anodic side) and 2,6 l.min-1 of air (cathodic side). The  heating ramp is 30°C.h-1. The anode is reduced at 700 °C, by the progressive introduction of H 2. Then  the cell is heated to the operating temperature under H2. 
+  The shape of the device used in experiments is a di sc; the inlet of the gas is supposed to be punctual  at the centre of the disc; the outlet is at the external edge of the cell. 
+  The inlet gas is water steam in HTE (or a mixture H 2O - H 2), pure hydrogen (or a mixture H 2O - H 2) in a  SOFC. As the reactions (R1) or (R2) proceed on the whole surface of the cell, the transformation rate  is a function of location, i.e. ξ(r)ξ= , where r is the distance from the centre of the cell to the current  point. 
+  SOFC model 
+ In order to get an analytical model, some simplifications were carried out: 
+- Over-voltages are proportional to the current  density. The proportionality factor is called Area Surface Resistance (ASR). It is noted Rs 
+(in  Ω.m-2) 
+- Oxygen pressure  2OP is supposed to be  constant throughout the cell 
+ 
+- The logarithmic term in Nernst equation is replaced by a linear approximation, valid  between ~0.125 and ~0.875 (Figure 1). We can  write  ξBA ξ1ξLn +−≈
+−⎟
+⎠⎞⎜
+⎝⎛ with A ≈ 2.385 and  B ≈ 4.770. This approximation allows an  analytic resolution of Nernst equation. 
+ 
+-2-1.5-1-0.500.511.52 0 0 . 10 . 20 . 30 . 40 . 50 . 60 . 70 . 80 . 9 1Ln (ξ / (1-ξ)) ξ Figure 1: linear approximation of the function ⎟
+⎠⎞⎜
+⎝⎛
+−ξ1ξLn 
+  The shape of the device used in experiments is a di sc; the inlet of the gas is supposed to be punctual  at the centre of the disc; the outlet is at the exte rnal edge of the cell. The electrolyte material is  zirconia doped with yttrium oxide (3% w/w), the anode material … the cathode material… 
+  The inlet gas is water steam in HTE (or a mixture H 2O - H 2), pure hydrogen (or a mixture H 2O - H 2) in a  SOFC. As the reactions (R1) or (R2) proceed on the whole surface of the cell, the transformation rate  ξ is a function of location, i.e. ξ(r)ξ= , where r is the distance from the centre of the cell to the current  point. 
+  The mass balance in a little crown leads to rξ(r) rFuq j∂∂=π, where j is the current density, q u is the  useful molar flow-rate (H 2 + H 2O), in mol.s-1, and F the Faraday's constant ( ≈ 96500 C.mol-1). 
+  The final differential equation describing the behaviour of a cell reads: 
+∑−−+=⎟⎟
+⎠⎞
+⎜⎜
+⎝⎛ bilities) (irreversi 2OP ξξ1Ln F2TR 0E E   (4)  The first 2 terms on the right side of the equation de scribe the reversible tension (Nernst equation), the  last one describe the irreversibilities (which decrease the available voltage at the cell). 
+  With the simplifications described previously and writing the total resistance Rs × j, the equation  becomes: 
+()rξ(r) rFuq sR 2OP Ln F2TRξBA F2TR 0E E∂∂− +−++≈ ⎟
+⎠⎞⎜
+⎝⎛ π  (5) 
+  and it can be easily integrated. 
+  In a SOFC process, the operational equations are: 
+ Voltage at the edge of the cell: E = E° - R* I (6)  Intensity: ()inξoutξFuq2I − = (7)  Voltage at zero intensity: 
+⎪⎭⎪⎬⎫
+⎪⎩⎪⎨⎧
++⎟⎟
+⎠⎞
+⎜⎜
+⎝⎛
++=°inξB-A 2OP Ln F2TR 0E E  
+(8)   Equivalent resistance:  sRΣR e-11R*R°−°= with 2Fuq4BTRR=° (9) 
+ 
+  Validation of the equations (SOFC) at a given temperature: 
+  The results are gathered in the next figure (Fig. 2) . The voltage (in mV) obtained at the boundaries of  the cell is plotted versus the intensity (in A) crossing the cell.  3 experiments are presented. Only one parameter is adj usted (the ASR, Rs in the previous equations -  all other parameters are known). As expected, the mo del fits correctly the linear part of the curves.  In particular, the model correctly represents the variat ion of the global cell resistance as a function of  the useful flow-rate.  Some discrepancies are obtained at low intensity; th ey can be overcome by a best fit of the logarithmic  expression (see Fig. 1 for instance).  020040060080010001200 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4Current density (A.cm-2)Voltage at the boundaries of the cell (mV)600 mL/min - experimental 600 mL/min - model 350 mL/min - experimental 350 mL/min - model 180 mL/min - experimental 180 mL/min - model
+  Figure 2: Validation of the operational equations on SOFC experiments at a given temperature 
+(900°C) for various hydrogen flow-rates 
+ 
+  Validation of the equations (SOFC) at a various temperatures: 
+  Some experiments were carried out at different temperatures, with a same hydrogen flow-rate. Each experiment allows to fit a value of Rs(T) 
+  020040060080010001200 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4Current density (A.cm-2)Voltage at the boundaries of the cell (mV)900°C 850°C 800°C 750°C
+  Figure 3: Validation of the operational equations on SOFC experiments at a given hydrogen flow-rate  for various temperatures 
+  An Arrhenius law can be fitted to the experiment al results. For the tested cell, one obtains  T8538 e810 7.262 Rs(T)−≈ , Rs in Ω.m2 and T in K. 
+  The previous expression depends on the tested cell. Rs can be split into 3 terms, as noticed  previously: 
+ - an Ohmic contribution, which can be estimated, knowing the materials (t hickness and conductivity  versus temperature) 
+ - an activation contribution, which could be estimated provided that the parameters of Butler - Volmer  equation (i.e. exchange current density) are known, 
+ 
+- a concentration contribution, which could be es timated provided that diffusion coefficients in the  various materials are known (a diffusion process is expected in the porous anode and cathode).   Some complementary experiments are needed for a be tter estimation of the two last contributions. 
+  HTE model 
+ The equations describing HTE process are the same as those previously integrated, excepted for 2 minor details: 
+ 
+- the logarithmic term is 
+⎟
+⎠⎞⎜
+⎝⎛ ξξ-1Ln instead of ⎟
+⎠⎞⎜
+⎝⎛
+−ξ1ξLn , hence the approximation is (A - B ξ) instead  of (- A + B ξ) 
+ 
+- the irreversibilities increase the needed HTE volt age, instead of decreasing the available SOFC  voltage (it is a direct consequence of t he second Principle of Thermodynamics). 
+  The fundamental equation becomes: 
+∑+ +=⎟⎟
+⎠⎞
+⎜⎜
+⎝⎛ bilities) (irreversi 2OP ξ-1ξLn F2TR 0EE   ( 1 0 ) 
+  which can be simplified to: 
+ 
+()rξ(r) rFuq sR 2OP Ln F2TRξBA F2TR 0E E∂∂+ ++−+≈ ⎟
+⎠⎞⎜
+⎝⎛ π  (11) 
+  and integrated to: 
+ Voltage at the edge of the cell: E = E° + R* I (12)  Intensity: ()inξoutξFuq2I − = (13)  Voltage at zero intensity: : 
+⎪⎭⎪⎬⎫
+⎪⎩⎪⎨⎧
++−⎟⎟
+⎠⎞
+⎜⎜
+⎝⎛
++=°inξBA 2OP Ln F2TR 0E E  
+(14)   Equivalent resistance:  sRΣR e-11R*R°−°= with 2Fuq4BTRR=° (15) 
+  Equations (13) and (15) are exactly identical to equations (7) and (9), equation (14) differs from  equation (8) by the signs before A and B. 
+  Validation of the equations (HTE) 
+ The electric supplying is connected and the electrochemical behaviour of the cell is studied under  different flow-rates or working potential. In fact this working potential determines the mode at which the  electrolysis cell operates. There are 3 means of op erating high temperature electrolysis: endothermic,  thermoneutral and exothermic operation: 
+- At the cell voltage of 1.3 V (corresponding to the ∆H/2F of the reaction of water dissociation), the  electrolysis generate enough heat to compensate en dothermic losses. The process is thermoneutral. 
+- Above 1.3 V, excess heat is available to heat the steam at the electrolysis module inlet up to the  operating temperature in a heat exchanger. 
+- Below the thermoneutral voltage, a high temperature high temperature heat is needed. This can lead  to an increase in the overall efficiency, but also to an increase of the investm ent costs for the process. 
+  The model, described by equations (13) to (15) was applied to HTE experiments, using a "zero  parameter approach" (i.e. the value of Rs given by equation (9) was used without any correction). The results are plotted in the Figure 4 (experiments at 900°C for various initial compositions of the inlet  gas) and Figure 5 (experiments at 800 and 900°C, for 2 flow-rates). 
+  800900100011001200130014001500160017001800 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45Current density (A.cm-2)Voltage at the boundaries of the cell (mV)5 % H2 Model 5 % 20 % H2 Model 20 %
+  Figure 4: Validation of the operational model on HTE experiments at a given gas flow-rate for various  initial compositions (H 2O - H 2) at 900°C. H 2O flow-rate is 16 g.h-1. 
+  8009001000110012001300140015001600 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45Current density (A.cm-2)Voltage at the boundaries of the cell (mV)800°C - 16 g/h 800°C - 20 g/h 900°C - 16 g/h 900°C - 20 g/h Modèle 16 g/h - 800 °C
+  Figure 5: Validation of the operational model on HT E experiments at various temperatures for two  different gas flow-rates. H 2O - H 2 ratio is 90-10 %. 
+  The fit is rather good, although no correction was performed. The main difference between SOFC and  HTE is the deviation to linearity, which occurs for lower intensities in HTE than in SOFC. This difference could be due to concentration over -voltage, as hydrogen and water steam have not the  same diffusion coefficient through the electrode material. However, complementary experiments have  to be carried out in specific conditions.  
+ 
+ 
+  Comparisons 
+  For a same temperature (900°C), the Figure 6 com pares the experimental and modelling results in  SOFC and HTE. A same cell points out the same features of total resistance, in SOFC as well as in  HTE conditions. 
+  02004006008001000120014001600 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45Current density (A.cm-2)Voltage at the boundaries of the cell (mV)SOFC 900°C SOFC 900°C - analytical model HTE 900°C - 10%H2 HTE 900°C - analytical model
+  Figure 6: Comparison of 2 experiments carried out in similar conditions (blue lozenges: SOFC; red  triangles: HTE) 
+ The Ohmic contribution is obviously symmetric. One c an demonstrate that the activation contribution is  symmetric too. The only discrepancy could come from the concentration contribution, which is  dissymmetrical. In an improved model, these data c ould give an order of magnitude of the diffusion  coefficients of water and hydrogen through the material of electrode. 
+  Hydrogen production 
+ HTE experiments carried out at 900°C with a gaseous mixture 90% H 2O - 10% H 2 lead to the  production of 230.5 NmL.min-1 H2, i.e. 2.34 NmL.min-1.cm-2, at a slightly exothermic working point 
+(1.32 V). Consumption rate was 70% water. This result is comparable to those obtained by Dornier [1]  in the frame of the Project HOTELLY in the 80's. For a slightly exothermal process, the produced  hydrogen flow rate was 2.56 NmL.min-1.cm-2, at 1000°C in a tubular geometry.  The decrease of H 2 percentage in the inlet mixture leads to an increase of H 2 production (2.47  NmL.min-1.cm-2, at 1.32 V for an initial mixture 95 / 5). This is in agreement with the operational model,  and Nernst equation.  The temperature decrease leads to a very high in crease of the cell resistance. As a consequence,  hydrogen production sharply decreases (1.40 NmL.min-1.cm-2, at 800°C). 
+  Conclusions 
+ A simple model describing the behaviour of a solid oxide fuel cell as well as of a high-temperature  electrolyser was finalised. The model is analytical (i.e. simplified), but a reasonably good agreement is  found on validation against SOFC experiments, at least on the linear part of the curve voltage vs.  intensity. This operational model is based on the fi t of only one parameter, the global resistance of the  cell. This value is the sum of three contributions: 
+- an Ohmic contribution, due to the electric re sistance of the current through the cell; 
+- an activation contribution, due to the existence of activated complexes at the interface electrode /  electrolyte, which is the site of t he half-reactions of oxido-reduction; 
+- a "concentration" contribution, due to the difference in gas concentrations in the bulk (where they are  measured, or calculated), and at the interface electrode / electrolyte, where Nernst local equation  really applies. A same resistance can characterize a cell functioning in SOFC or in HTE. However, a slight  discrepancy appears in HTE processing at high intensities, thus at high voltages. It could be due to the  concentration contribution to the global resistance of the cell, which is dissy mmetric. More experiments  are needed in order to improve this model. 
+ 
+  Acknowledgments 
+ The authors wish to thank CEA/DRT (Energy At omic Commission, Direction of Technological  Research), especially Dr. F. Le Naour and P. Baurens for their financial support and help.  Anne Laure Sauvet and Antoine Henry are acknowledged for their help in carrying out SOFC  experiments.  References 
+ [1]: "High temperature electrolysis of water vapou r - Status of development and perspectives for  application", W. Donitz and E. Erdle, Int. J. Hydrogen Energy, vol 10 n°5 pp 291-295, 1985

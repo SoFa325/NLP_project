@@ -1,0 +1,399 @@
+See discussions, stats, and author profiles for this publication at: 
+
+s ArticleinJournal of Materials Chemistry · May 2008
+
+DOI: 10.1039/B718822F
+
+4 authors:
+
+Some of the authors of this publication are also working on these related projects:
+
+Efficient Power2Gas Combining SOEC and Biomass Gasification (EP2Gas)
+
+Solid oxide electrolysis for grid balancing (2013-2015)
+
+All content following this page was uploaded by on 10 July 2020.
+
+The user has requested enhancement of the downloaded file.
+
+Highly efficient high temperature electrolysis†
+
+Anne Hauch,*Sune Dalgaard Ebbesen, Søren Højgaard Jensen and Mogens Mogensen
+
+Received 5th December 2007, Accepted 3rd January 2008  First published as an Advance Article on the web 31st January 2008  DOI: 10.1039/b718822f
+
+High temperature electrolysis of water and steam may provide an efficient, cost effective and environmentally friendly production of H2 using electricity produced from sustainable, non-fossil
+
+e.g. nuclear power facilities during off-peak hours.
+
+This journal is ª The Royal Society of Chemistry 2008
+
+J. Mater. Chem., 2008, 18, 2331–2340 | 2331
+
+materials e.g. based on titanium alloys may be used as catalyst
+
+2H2O + electrical energy (DG) + heat (TDS) / 2H2 + O2.
+
+From basic thermodynamic considerations it is advantageous to operate the electrolysis cells at high temperatures where a substantial part of the required energy is provided as thermal energy and consequently the primary electric energy demand (DG), is considerably reduced. On the contrary, for low tempera-ture electrolysis a larger quantity of electrical energy is necessary
+
+carrier.1As mentioned, it is thermodynamically advantageous to operate the electrolysis cells at high temperature; however this does not appear to be possible for PEM cells because the applied polymer membrane electrolyte cannot withstand long-term operation in strong oxidising conditions at the anodic polarised oxygen electrode at high temperature.
+
+The PAFCs are operated at 150–200C, use orthophosphoric acid as the proton conducting electrolyte and Pt as catalyst on
+
+The emphasis is on the electrode material issues for the SOECs because this plays a key role in the development of these cells to become cost competitive, high performing and long-term stable SOECs for efficient and environmentally friendly H2 production. Even though promising electrolysis results have been obtained for SOECs it is evident that substantial develop-ment of electrode material is necessary to obtain highly perform-ing and long-term stable electrolysis cells. Perspectives for future large scale H2 production by electrolysis of steam using SOECs
+
+being endothermic. These high cell voltages are necessary in order to achieve an acceptable H2 production rate. Increasing the temperature to above 200C increases the electrode reaction rate to an acceptable extent with low enough cell voltages that the cell is self-cooled (thermoneutral potential). High tempera-ture alkaline electrolysis cells (HT-AEC) will be described in the next section. Electrode material aspects of solid oxide electrolysis cells (SOEC) are described in detail in Section 3.
+
+Water is a very poor ionic conductor, and ions must be added in
+
+Types of electrolysis cells
+
+Well known fuel cells are polymer exchange membrane fuel cells (PEMFC), phosphoric acid fuel cells (PAFC), alkaline fuel cells (AFC), molten carbonate fuel cells (MCFC) and solid oxide fuel cells (SOFC). The PEM cells typically operate at temperatures
+
+order to form a conductive electrolyte (mainly potassium and sodium hydroxide solutions) so the reaction can proceed without too high resistance. Most commercial AEC are operated at 70–80C with a potassium hydroxide electrolyte (25–30 wt%) and nickel electrodes. As described in the previous section, increasing the operating temperature is favourable as the necessary electri-
+
+dispersed—and expensive—Pt catalysts and a proton conducting polymer membrane as the electrolyte. PEM electrolyser cells (PEMECs) for H2 production are commercially available, but are even more expensive than PEMFC because the carbon
+
+very limited experimental data for alkaline electrolysis at temper-atures at 200C and above has been reported.2–4Nevertheless it was shown that the efficiency of water electrolysis for production of H2 over polished nickel electrodes increases significantly at
+
+2332 | J. Mater. Chem., 2008, 18, 2331–2340
+
+This journal is ª The Royal Society of Chemistry 2008
+
+The materials known to be applicable for alkaline electrolysis are very limited because of the highly corroding electrolyte solu-tion and they become increasingly limited at high temperatures.
+
+	Both platinum and palladium show lower polarisation for oxygen evolution than nickel, but because of economical reasons, nickel is almost exclusively used in conventional electro-lysers.5,6To decrease the polarisation, several alloys (Ti–Ni7and Ni–Ir, Ni–Ru, Ni–Mo8) were tested and showed slightly lower polarisation. For pure nickel electrodes, mainly Raney-nickel, i.e. leached nickel–aluminium or nickel–zinc alloy is used, because of the high active surface area and porosity. Other highly porous materials such as Pt/C were suggested as alterna-tives to the nickel electrodes.9–11 
+	Most electrode materials have been tested at temperatures up to 160C with a slight increased thermal degradation at high temperature.5–7,12,13Conventional nickel electrodes were shown to withstand temperatures of at least 200C, as they were used for the Apollo fuel cell system, normally operated at 204C and successfully tested at temperatures of 260C.14 
+	The separators/diaphragms serve as an ionic conducting material as well as separating the product gasses. Separation of the product gasses becomes increasingly important at high pressure (necessary at high temperature operation) where oxygen
+
+electrode. The most commonly used material for the porous O2 electrode is a composite of YSZ and strontium doped lanthanum manganite (LSM). SOEC tests reported in the 1980s were mainly performed on tubular formed SOECs (HotElly project19and Westinghouse Electrical Corporation22) with a porous oxygen electrode tube as cell support. In recent years planar cells have been preferable for SOECs where both electrolyte supported23,24 and H2 electrode supported cells have been applied.25SOECs have been tested at temperature ranging from 700C to 1000 C and at ambient pressure and at steam-to-hydrogen ratios from 30 : 70 to 99 : 1.26Compared to long-term tests of SOFC, only relatively few long-term electrolysis tests have been reported and unfortunately only a few include thorough analysis of the degradation mechanisms e.g. by electrochemical impedance spectroscopy (EIS) before, during and after electrolysis testing and by scanning and transmission electron microscopy com-bined with micro analysis of chemical compositions. Therefore many material aspects needs to be investigated in detail e.g. initial performance of electrodes including ‘‘new’’ materials, long-term stability, effect of cycling (temperature, operation mode etc.), effect of impurities in the raw materials, effect of manufacturing and also optimal materials for auxiliary compo-nents, sealing etc. In the following the emphasis will be on
+
+This journal is ª The Royal Society of Chemistry 2008
+
+J. Mater. Chem., 2008, 18, 2331–2340 | 2333
+
+problems and perspectives for state-of-the-art SOEC electrodes and the development of improved and new electrodes.
+
+measured on Ni/YSZ-YSZ half-cells in both fuel cell and electro-lysis mode, which has not often been reported.30At 800C, a polarisation of 50 mV and p(H2O)/p(H2) ¼ 0.5/0.5 they obtained
+
+Fig. 2 	Initial electrolysis (negative current densities) and fuel cell perfor-
+
+mance recorded by iV curves at 850C, p(H2O)/p(H2) ¼ 0.5/0.5 for a high
+
+and lower performing H2 electrode supported SOC.25Reproduced by
+
+permission from The Electrochemical Society.
+
+0.23 V i.e. a resistance of the cell of 0.78 U cm2. Reproduced by permis-sion from Elsevier.
+
+x In the text by O’Brien et al.23it was only stated that ‘‘ASR values are similar for both fuel-cell and electrolysis modes of operation’’, however
+
+from Fig. 5 and Fig. 10, especially sample E6 and ss14, it can be
+
+‡ ASR values are those given in the text in the references or calculated from the chord of the iV curves in linear regions and are therefore not corrected for fuel or steam utilisation.
+
+observed that ASR in electrolysis mode is slightly higher than ASR in fuel cell mode for the same cell.
+
+{ Calculated from Fig. 16 in work by Do¨nitz et al.19
+
+2334 | J. Mater. Chem., 2008, 18, 2331–2340
+
+This journal is ª The Royal Society of Chemistry 2008
+
+Fig. 4 	Scanning electron micrographs. A) H2 electrode of a reference cell. B) Overview of the H2 electrode (top), YSZ electrolyte (middle) and the O2 electrode of a reference cell. C) H2 electrode of a SOEC tested for 1500 h at 850C,0.5 A cm2and p(H2O)inlet ¼ 0.5 atm and D) overview micrograph of the SOEC tested for 1500 h.26
+
+in the microstructure of Ni/YSZ was observed during electrolysis for 1500 h at 850C,0.5 A cm2and p(H2O)/p(H2) ¼ 0.5/0.5 (comparison of Fig. 4A, reference cell, and Fig. 4C, electrolysis tested cell).k26Also no delamination of the Ni/YSZ electrode from the dense YSZ electrolyte was observed (comparison of Fig. 4B, reference cell, and Fig. 4D, electrolysis tested cell). A thorough analysis of the Ni particle size distributions revealed that the mean Ni particle size increased from 1.000.05 mm for a non-tested cell to 1.250.05 mm after electrolysis testing
+
+closest to the electrolyte for SOECs tested at more harsh condi-tions i.e. at current densities higher than1 A cm2.26
+
+Degradation of Ni/YSZ electrodes. Although Ni/YSZ cermet electrodes have microstructures that can sustain thousand of hours of electrolysis testing at moderate current densities (below 1 A cm2), there are other material issues leading to degrada-tion of the Ni/YSZ cermet electrode. Relatively limited numbers of long-term electrolysis tests of SOECs have been reported
+
+1500 hours. However this change in the mean Ni particle size is not the main degradation mechanism for these SOECs.26 Similar change in the mean Ni particle size was observed for cells with the same initial Ni/YSZ microstructure when tested in fuel cell mode34Consequently, it is possible to produce cells with fine Ni/YSZ microstructures which are as stable over thousands of hours of electrolysis testing as over thousands of hours of fuel cell testing. However, significant microstructural changes were observed for the innermost few microns of the Ni/YSZ electrode
+
+Ceramatec and Idaho National Laboratory (INL) reported long-term electrolysis tests of SOECs applying state-of-the-art‘‘up-to-date’’ Ni/YSZ electrodes.24Although they stated that a ‘‘stable performance was demonstrated’’ for their single cell test the corresponding cell voltage and development of cell resistance during electrolysis testing for 300 hours revealed an increase in cell resistance from 0.5 U cm2to 0.62 U cm2, corres-ponding to an increase in cell voltage of20% per 1000 hours at 800C and0.7 A cm2. Unfortunately Ceramatec and INL did not provide data (EIS or micro analysis and electron
+
+microscopy) that could identify at which electrode the degrada-
+
+This journal is ª The Royal Society of Chemistry 2008
+
+J. Mater. Chem., 2008, 18, 2331–2340 | 2335
+
+on single cells with Ni/YSZ H2 electrodes.26The cells were found to degrade faster in electrolysis mode than fuel cell testing of similar SOCs.26,34In electrolysis mode the cells were found to have a cell voltage degradation of 2% per 1000 h at0.5 A cm2 and 850C, and by applying EIS it was found that the majority of the increased polarisation resistance was caused by a loss in performance of the Ni/YSZ electrode.26Electron microscopy (SEM, transmission electron microscopy and scanning transmis-sion electron microscopy) combined with energy dispersive spec-troscopy (EDS) revealed that a glassy phase containing silica impurities had built up at the triple-phase-boundaries (TPB) of the H2 electrode as illustrated by the EDS map in Fig. 5.35Accu-mulation of silica containing impurities at the grain boundaries and TPBs was previously reported for model systems36and half cells37and impurities in the raw materials greatly influences the performance the Ni/YSZ system.38Glassy phase impurities accumulated at the TPBs of the Ni/YSZ electrode upon electroly-sis operation can be expected to have different composition and physical properties compared to impurities observed for fuel cell tested cells due to the differences in e.g. potential and concentra-tion gradients and amount of H2O incorporated in the glass phase.
+
+Beside impurities in the raw materials the build-up of impurities can originate from ‘‘external’’ sources such as glass sealing33which is usually not considered a Si-source during SOFC testing. A considerable p(Si(OH)4) exist over the glass sealing material at electrolysis operation conditions and form SiO2 upon reduction of steam in the Ni/YSZ electrode near the electrolyte. Contamina-tion of the Ni/YSZ electrode from an ‘‘external’’ source i.e. the glass sealing could be eliminated by coating of the glass seal or by applying a seal less test set-up for electrolysis testing as recently reported by Brisse´ et al.39and previously by Westinghouse Electri-cal Corporation.40Westinghouse presented SOEC test results on tubular cells where slurry coat electrochemical vapour deposition (EVD) was applied to manufacture the Ni/YSZ electrode and EVD was used to produce the YSZ electrolyte.22,41EVD has the advantages that the thickness of the layer can be controlled to within one micron and EVD provides electrolytes and electrodes with high purity, but the EVD process is incompatible with the demand for cost competitive production of SOCs.42,43
+
+Main challenges for state-of-the-art H2 electrodes. As described in the previous section, inexpensive preparation methods that can easily be scaled up are available for production of Ni/YSZ cermet electrodes with a high performing microstructure that can withstand thousand of hours of electrolysis testing. The Ni/YSZ cermet electrode is absolutely promising for H2 electrodes for technologically relevant SOECs. Nevertheless, the degradation rates for state-of-the-art Ni/YSZ electrode in SOECs are too high. At present the main challenge appears to be to minimise and/or control glassy phase impurities that accumulate at the TPBs in the Ni/YSZ and thereby hamper the electrochemical reaction. A cell and test system completely free of impurities such as Si and Na is hardly an option especially not when costs are considered. As previously reported a possible solution could be to use a Si scavenger such as Al2O3 44–46 or to change the properties of the glassy phase impurities by the use of dopant glass modifiers such as potassium or vanadium oxides.47,48It will be a demanding task to reach an optimal scav-enger/dopant with several problems: 1) the knowledge regarding the composition and physical properties of the glass phase impurities in the electrode is limited and will depend on para-meters such as operating conditions, raw materials and produc-tion, 2) the optimal quantity and distribution of the scavenger in the Ni/YSZ electrode need to be determined and 3) Ni/YSZ electrodes with such scavengers/dopants should still be manufac-tured using inexpensive production methods.
+
+Furthermore, there is a possibility that other impurities are present in quantities large enough to influence the performance of the Ni/YSZ electrode even though such impurity elements have not been detected in Ni/YSZ electrodes yet. Less than
+
+alumina–silicate impurity at a TPB a couple of microns from the electro-lyte/electrode interface. The SOEC had been tested for 1316 h at and the main part of the degradation of the SOEC was attributed to the Ni/YSZ
+
+cient to significantly hamper the electrode reactions.
+
+rity phase is a Na containing alumina–silicate. Na is not visible in the map when both the Si and Al maps are overlaid, however Na is solely located within the alumina–silicate phase. Metal atom percentages for the alumina–silicate impurity phase are given below the EDS map. Dark regions are porosities. Figure from Hauch et al.35Reproduced by permission from The Electrochemical Society.
+
+Alternative materials have been considered and tested as H2 electrodes for SOECs. Uchida and co-workers have reported on a H2 electrode of samaria doped ceria (SDC) with highly dispersed nanosized Ni particles.49–51They found that the optimal load of Ni was approximately 17 vol% at which the
+
+2336 | J. Mater. Chem., 2008, 18, 2331–2340
+
+This journal is ª The Royal Society of Chemistry 2008
+
+Fig. 6 iV curves for a H2 electrode of La0.35Sr0.65TiO3/Ce0.5La0.5O1.75d at various p(H2O)/p(H2) at 800C. From O. Marina et al.29Reproduced by permission from The Electrochemical Society.
+
+steps to preserve the contact between the electrolyte and the LSM based electrode as observed even after 1500 hours of electrolysis testing (Fig. 4). Inexpensive production methods such as spraying and screen printing can be applied when producing LSM based O2 electrodes with microstructures able to sustain thousands of hours as O2 evolution electrode during electrolysis testing.
+
+When tested in fuel cell mode degradation of O2 electrodes based on stoichiometric LSM caused by formation of secondary phases that are poorly conductive such as La2Zr2O7 or SrZrO3 was reported.57–62So far only a few reports on electrolysis tests with degradation of the LSM based O2 electrode e.g. caused by such secondary phases have been published.63Nanoscale chemical analyses e.g. by EDS in a FEG-TEM/STEM for LSM electrodes of long-term tested SOECs are required to inves-tigate a phenomenon such as formation of secondary phases.
+
+performing electrode with a load of 26 vol% where the mean Ni particle diameter was 129 nm.49The polarisation resistance of the SDC based H2 electrode with optimal load of nanosized Ni particles was 0.18 U cm2at 900C. This electrode is promising, however, the resistance it is still too high considering an internal resistance of 0.27 U cm2at 850C for a full cell including polari-sation resistances of both electrodes and ohmic resistance of the electrolyte and auxiliary layers has been reported.25Long-term test of cells with a similar SDC H2 electrode with highly dispersed nanosized Ni particle was reported to be stable over 1100 h of fuel cell testing in humidified H2 at 800C and 0.6 A cm2but to the best of our knowledge results on long-term electrolysis testing e.g. at high p(H2O) and various temperatures and current densities for such SDC/Ni H2 electrodes have not been reported.
+
+Titanate based H2 electrodes have also been developed for both SOFC and SOEC.29,52Marina et al.29compared a standard Ni/YSZ electrode with a titanate/ceria based electrode (La0.35Sr0.65TiO3/Ce0.5La0.5O1.75d) and found that from iV curves at 800C and p(H2O)/p(H2) ¼ 0.5/0.5, the Ni/YSZ elec-trode was superior in fuel cell mode but the titanate/ceria based electrode showed a lower polarisation resistance (0.21 U cm2) in electrolysis mode than the Ni/YSZ electrode (0.29 U cm2). Increased performance in electrolysis mode compared to fuel cell mode was also reported for strontium titanates of similar compositions by Blennow.52However, Marina et al. observed a significant reversible drop in initial performance of the titanate/ceria based electrode upon increasing the p(H2O)/p(H2) ratio from 0.8/0.2 to 0.9/0.1 as shown in Fig. 6. It was argued that this could be explained in terms of the decreased electrical conductivity of titanate/ceria composites at reduced pO2.
+
+3.3. 	State-of-the-art O2 electrodes for SOECs
+
+The 	state-of-the-art 	O2 	electrode 	is 	a 	composite 		of 	Sr doped LaMnO3 	and 	YSZ 	(LSM-YSZ),43 	and 	is 	widely applied.25,28,31,41,53–55Problems with delamination of the O2 electrode from the electrolyte were reported18,31,56and might be caused by pressure differences occurring upon O2 evolution in closed pores in the electrode/electrolyte interface.31Such delami-nation can hardly be considered a purely material chemistry problem but is rather a question of optimising the preparation
+
+Even though the LSM based oxygen electrode appears to be applicable for long-term testing of SOECs alternative O2 electrodes were reported.31,54,55,64Wang et al. obtained higher performances when LSM was substituted with mixed ionic–electronic conductors (MIEC) such as Sr doped LaFeO3 (LSF) or even better with Sr doped LaCoO3 (LSCo) in both electrolysis and fuel cell mode.55The improved initial performance for LSF and LSCo oxygen electrodes found by Wang et al. is evident from the electrolysis iV curves shown in Fig. 7 obtained on electrolyte supported (100 mm) cells with Co–CeO2–YSZ H2 elec-trodes at 700C. It should be noted that at higher temperature, e.g. above 800C which will be most relevant for electrolysis operation of the SOCs, a barrier layer will be required for O2 electrodes such as LSF and LSCo to avoid formation of insulat-ing secondary phases at the electrode/YSZ electrolyte. The stability of the LSF-YSZ electrode was only tested for 5 hours at 700C by Wang et al.55and this does not provide evidence for the long-term chemical and microstructural stability of their oxygen electrode for SOECs.
+
+Also Momma et al.31have reported on the use of LaCoO3 based electrodes. They were unsuccessful using an electrode of
+
+Fig. 7 Initial iV curves for electrolyte supported (100 mm) cells with composite O2 electrodes of LSM–YSZ (,), LSF–YSZ (B) and LSCo–YSZ (D) at 700C. 15% H2O in H2 was lead to the Co–CeO2–YSZ H2 electrode and pure O2 to the oxygen electrode.55Reproduced by permission from The Electrochemical Society.
+
+This journal is ª The Royal Society of Chemistry 2008
+
+J. Mater. Chem., 2008, 18, 2331–2340 | 2337
+
+LSM as the electrode delaminated from the YSZ electrolyte and therefore tested LaCoO3 based electrodes with various Sr content. Momma et al.31found similar degradation rates for non-doped LaCoO3 electrode as LSM.
+
+The non-doped LaCoO3 had the best initial performance but after only 80 hours of electrolysis testing at0.5 A cm2and 1000C the cell with the non-doped LaCoO3 reached the same degree of degradation as the cells with Sr-doped LaCoO3
+
+massive research effort in the technologies of harvesting the renewable energy as well as in the conversion technologies is necessary in order to decrease the cost of ‘‘renewable’’ H2.76 Synthetic CO2 neutral hydrocarbons have the potential of being competitors to ‘‘renewable’’ H2, and therefore this option should also be carefully considered through serious research programs.
+
+To justify that SOEC for H2 production is not only interesting from a scientific point of view but also have the potential for
+
+electrodes. 	inexpensive commercial H2 production on large scale it is impor-
+
+tant to estimate H2 production prices using SOECs.
+
+Even though YSZ is by far the most commonly used electrolyte for SOECs some authors have reported on different alternative electrolyte materials28,49,54,65,66and it was shown that the choice of electrolyte material can influence the electrode performance. Osada et al.49showed that the resistance of their Ni–SDC H2 electrode was lowered significantly in the temperature interval from 700–900C upon changing the electrolyte material from YSZ to the more expensive, but more conductive scandia stabilised zirconia, ScSZ. A positive effect on the electrode performances in electrolysis mode has also been obtained upon substituting the YSZ electrolyte with a samaria-doped CeO2 electrolyte54but Eguchi et al.54found the H2 evolution rate for the cell with a SDC electrolyte was far too low at the applied current; most likely because of reduction of Ce4+to Ce3+(deterio-ration of ionic transference number) from the H2 electrode side. From an SOEC stack point of view it can be advantageous due to cost reduction to optimise SOECs for operating at a reduced temperature e.g. 700–800 	C where YSZ is not an optimal electrolyte. An alternative electrolyte for such purpose could be doped lanthanum gallate e.g. with Sr on the La site and Mg
+
+1.46 $ ¼ 1 V.) One of the recurring conclusions was that the expense of the electricity dominates the H2 cost and the electri-city price therefore significantly influences the estimated H2 production prices. The electricity cost in the estimations ranged from 0.014 V per kWh to 0.037 V per kWh.
+
+The performance of a cell produced at Risø – DTU has been reported to be able to reach3.6 A cm2at only 1.48 V at 950C, i.e. an ASR of the cell of approximately 0.17 U cm2, and a 37% steam utilisation. Using this cell performance as an input for the H2 production cost estimation, together with values in Table 1, the calculated H2 production cost as function of the electricity price is shown in Fig. 8. Note that the H2 production cost does not include storage costs. Before the economic forecast in Fig. 8 can be achieved it is necessary to produce cells with sufficient performance stability. The initial performance is adequate, but the durability given in Table 1 is not yet met
+
+However this will also require modifications of the Ni based H2 electrode to avoid the formation of LaNiO3 67–70 as the Ni volume percentage (typically40%) cannot be lowered enough to avoid the thermodynamic driving force towards LaNiO3
+
+4. 	Perspectives for H2 generation via electrolysis at
+
+high temperatures
+
+a A 5 kW plant based on SOFC technology is predicted to cost 350–550 V per kW.81Assuming a power output of 1 W cm2this corresponds to an investment cost of 3500–5500 V per m2cell area.
+
+When evaluating the commercial potential of steam electrolysis,  it is important to be aware that hydrogen may be produced by
+
+several other methods. Today production of H2 from fossil fuels is cheaper and more efficient than H2 from other sources. H2 can be produced from fossil fuels via reforming, partial oxidation or
+
+coal gasification, all with a high efficiency in the order of 60–85%.71The disadvantages of H2 production from fossil fuels are the depleting resources as well as emission of CO2. Besides production of H2 from fossil fuels, H2 may be produced via bio-logical processes (efficiency of around 10%72), thermo chemical
+
+cycles (e.g. zinc oxide–oxide and iodine–sulfur cycles, efficiency
+
+of 30–40%73,74) photochemical processes (efficiency of around
+
+10%75) and water/steam electrolysis (efficiency exceeds 95%19).
+
+The primary means of production of synthesis gas and H2 is catalytic reforming of hydrocarbons, especially of natural gas.
+
+At present H2 from fossil fuels in general and natural gas in particular is by far cheaper than H2 from other sources. A
+
+Fig. 8 H2 production price vs. electricity price. For comparison the price of H2 production from conventional low temperature alkaline electrolysis is shown as well.80The pie chart shows the production price parts given the assumptions in Table 1. Reproduced by permission from Elsevier.32
+
+2338 | J. Mater. Chem., 2008, 18, 2331–2340
+
+This journal is ª The Royal Society of Chemistry 2008
+
+electrode material development in order to produce long-term stable SOECs.
+
+Comparing the higher heating values of H2 and oil, a price of 1 V kg1of H2 corresponds to an equivalent crude oil price of 30 V per barrel using figures from World Energy Council. The crude oil price of today is above 50 V per barrel corresponding to an equivalent of 1.7 V kg1of H2. Then it follows from Fig. 8 that for electricity prices below 0.02–0.03 V per kWh H2 production by high temperature steam electrolysis can be
+
+This work was supported by the EC via the project ‘‘Hi2H2’’contract no. FP6-503765, Energinet.dk via the project no. PSO2007-1-7124, the Danish Programme Committee for Energy and Environment via SERC contract no 2104-06-0011 and the Danish National Advanced Technology Foundation via contract no 018-2006-2.
+
+from renewable energy sources it will become necessary to‘‘store’’ the electricity to balance inequalities in the consumer’s electricity demands and the electricity produced by the renewable energy sources. The solid oxide cells can work reversibly. Hence, the SOEC is an obvious choice for ‘‘Peak Shaving’’, i.e. where inexpensive electricity is used to produce H2 (to store the electri-city) and electricity can be produced from the H2 using SOFCs (when electricity is expensive and the demand is high).56
+
+1 A. T. Marshall, S. Sunde, M. Tsypkin and R. Tunold, Int. J. Hydrogen Energy, 2007, 32, 2320–2324.
+
+2 A. C. Ferreira, E. R. Gonzalez, E. A. Ticianelli, L. A. Avaca and B. Matvienko, J. Appl. Electrochem., 1988, 18, 894–898.
+
+3 M. H. Miles, G. Kissel, P. W. T. Lu and S. Srinivasan, J. Electrochem. Soc., 1976, 123, 332–336.
+
+4 Y. Ogata, H. Hori, M. Yasuda and F. Hine, J. Electrochem. Soc., 1988, 135, 76–83.
+
+5 T. Ohta, J. E. Funk, J. D. Porter and B. V. Tilak, Int. J. Hydrogen Energy, 1985, 10, 571–576.
+
+6 M. H. Miles, J. Electroanal. Chem., 1975, 60, 89–96.
+
+7 N. V. Krstajic, B. N. Grgur, N. S. Mladenovic, M. V. Vojnovic and
+
+High temperature operation of water electrolysis significantly increases the performance of both alkaline electrolysis cells (AEC) and solid oxide electrolysis cells (SOEC). Increasing the operation temperature for AEC from the conventional 80–90 C to above 200C significantly increases the electrolysis perfor-mance and thereby the electricity to H2 efficiency. An obstacle for operating at high temperature is the lower stability of the materials. At present suitable cell and separator materials for HT-AEC, which are not more expensive than low temperature alkaline electrolyser materials, have been identified, but the
+
+265–270.
+
+9 P. Dabo, H. Menard and L. Brossard, Int. J. Hydrogen Energy, 1997, 22, 763–770.
+
+10 G. Kreysa and B. Hakansson, J. Electroanal. Chem., 1986, 201, 61–83.
+
+11 J. Fournier, L. Brossard, J. Y. Tilquin, R. Cote, J. P. Dodelet, D. Guay and H. Menard, J. Electrochem. Soc., 1996, 143, 919–926. 12 J. Balej, Int. J. Hydrogen Energy, 1985, 10, 89–99.
+
+13 D. E. Hall, J. Electrochem. Soc., 1985, 132, C41–C48.
+
+14 R. B. Ferguson, NASA Research Center, 1969, NAS Report: 19700044586.
+
+15 Electrochemical hydrogen technologies: Electrochemical production and combustion of hydrogen, ed. H. Wendt, Elsevier, Amsterdam,
+
+necessary long term stability remains to be proven. 	The Netherlands, 1990.
+
+For SOEC practical electricity to H2 efficiency of about 90% seems realistic and the initial performances reported for SOECs are promising with area specific resistances in electrolysis mode down to 0.17 U cm2at 950C for a full SOC. Also for SOEC the lifetime is the main issue to be addressed before the techno-logy is commercially viable. The main problem for state-of-the-art SOECs relates to the degradation of the Ni/YSZ based H2 electrode and it is necessary either to grossly improve the state-of-the-art Ni/YSZ electrode for electrolysis operation or develop highly performing and long-term stable H2 electrodes based on alternative materials.
+
+At electricity prices below 0.02–0.03 V per kWh H2 production by high temperature steam electrolysis using SOECs is competi-tive to production from fossil fuels. Because the electrolysis cells can work reversibly, production of H2 via electrolysis in periods with low electricity prices, and reverse in periods with high electricity prices (as is often the case for electricity production from renewable energy sources) is an obvious choice for ‘‘Peak Shaving’’.
+
+From a materials point of view a substantial fundamental R&D effort is necessary to develop inexpensive, highly perform-ing and long-term stable electrolysis cells. In the long-term more technologically related development is necessary to produce efficient and cost competitive SOEC systems for large scale H2 production e.g. in systems with renewable energy sources.
+
+16 J. Divisek and P. Malinowski, J. Electrochem. Soc., 1986, 133, 915–920.
+
+17 H. Wendt and H. Hofmann, Int. J. Hydrogen Energy, 1985, 10, 375–381.
+
+V. Venkataraman, in SOFC-IX, PV2005-07, ed. S. C. Singhal and J. Mizusaki, The Electrochemical Society Inc., Pennington, NJ, USA, 2005, pp. 285–294.
+
+19 W. Do¨nitz, E. Erdle and R. Streicher, Electrochemical Hydrogen
+
+Hydrogen, ed. H. Wendt, Elsevier, Amsterdam, 1990, ch. 3, pp. 213–259.
+
+20 W. Do¨nitz and E. Erdle, Int. J. Hydrogen Energy, 1985, 10, 291–295. 21 W. Do¨nitz, E. Erdle, R. Schaumm and R. Streicher, Adv. Hydrogen Energy, 1988, 6, 65–73.
+
+22 A. O. Isenberg, Solid State Ionics, 1981, 3–4, 431–437.
+
+23 J. E. O’Brien, C. Stoots, J. S. Herring and P. A. Lessing, J. Fuel Cell Sci. Technol., 2005, 2, 156–163.
+
+24 J. Hartvigsen, S. Elangovan, J. E. O’Brien, C. M. Stoots, J. S. Herring and P. Lessing, Proceedings - 6th European Solid Oxide Fuel Cell Forum, ed. M. Mogensen, Lucerne, Switzerland, 2004, pp. 378–387.
+
+J. Electrochem. Soc., 2006, 153, A1741–A1747.
+
+26 A. Hauch, PhD Thesis, Risø National Laboratory, Technical University of Denmark, 2007.
+
+27 R. Barfod, A. Hagen, S. Ramousse, P. V. Hendriksen, and
+
+pp. 960–969.
+
+28 J. E. O’Brien, C. Stoots, J. S. Herring, P. A. Lessing, J. Hartvigsen, and S. Elangovan in Proceedings of ICONE12, 12th International Conference on Nuclear Engineering, 2004. Virginia, USA.
+
+This journal is ª The Royal Society of Chemistry 2008
+
+J. Mater. Chem., 2008, 18, 2331–2340 | 2339
+
+J. Electrochem. Soc., 2007, 154, B452–B459.
+
+30 T. Matsui, A. Ozaki, R. Kikuchi and K. Eguchi, SOFC-IX, PV2005-07, ed. S. C. Singhal and J. Mizusaki, The Electrochemical Society Inc., Pennington, NJ, USA, 2005, pp. 621–626.
+
+DoE Cooperative Agreement DE-FC36-04 GO14351, 2006.
+
+57 C. Clausen, C. Bagger, J. B. Bilde-Sørensen and A. Horsewell, Solid State Ionics, 1994, 70, 59–64.
+
+58 J. A. M. Vanroosmalen and E. H. P. Cordfunke, Solid State Ionics,
+
+31 A. Momma, T. Kato, Y. Kaga and S. Nagata, J. Ceram. Soc. Jpn., 	1992, 52, 303–312.
+
+1997, 105, 369–373.
+
+32 S. H. Jensen, P. H. Larsen and M. Mogensen, Int. J. Hydrogen Energy, 2007, 32, 3253–3257.
+
+59 T. Kawada, N. Sakai, H. Yokokawa, M. Dokiya and I. Anzai, Solid State Ionics, 1992, 50, 189–196.
+
+60 G. Stochniol, E. Syskakis and A. Naoumidis, J. Am. Ceram. Soc.,
+
+33 A. Hauch, S. H. Jensen, M. Mogensen and J. Bilde-Sørensen, 	1995, 78, 929–932.
+
+J. Electrochem. Soc., 2007, 154, A619–A626. 	61 A. Mitterdorfer and L. J. Gauckler, Solid State Ionics, 1998, 111, 185–
+
+34 A. Hagen, R. Barfod, P. V. Hendriksen, Y.-L. Liu and S. Ramousse, 	218.
+
+J. Electrochem. Soc., 2006, 153, A1165–A1171.
+
+35 A. Hauch, J. Bowen, L. Theil-Kuhn and M. Mogensen, Electrochem. Solid-State Lett., 2007, 11, B38–B41.
+
+36 K. V. Hansen, K. Norrman and M. Mogensen, J. Electrochem. Soc.,
+
+62 K. Wiik, C. R. Schmidt, S. Faaland, S. Shamsili, M. A. Sinarsrud and T. Grande, J. Am. Ceram. Soc., 1999, 82, 721–728.
+
+63 I. Koshiro, H. Miyamoto, M. Sumi, and K. Mori, in Proc. 10th World Hydrogen Energy Conference, 1994, Cocoa Beach, Florida, USA,
+
+2004, 151, A1436–A1444. 	pp. 695–701.
+
+37 Y.-L. Liu, S. Primdahl and M. Mogensen, Solid State Ionics, 2003, 	64 J. Hartvigsen, S. Elangovan, J. E. O’Brien, C. Stoots and J. Herring,
+
+161, 1–10. 	ECS Trans., 2007, 7, 357–363.
+
+38 K. V. Jensen, PhD Thesis, Risø National Laboratory, Technical 	65 S. Elangovan, J. J. Hartvigsen and L. J. Frost, Int. J. Appl. Ceram.
+
+University of Denmark, 2002. 	Technol., 2007, 4, 109–118.
+
+39 A. Brisse´, J. Schefold, M. Zahid and A. Aslanides, in Proceedings of 	66 J. E. O’Brien, C. M. Stoots, J. S. Herring and J. Hartvigsen, J. Fuel
+
+The 2ndWorld Hydrogen Technologies Convention, 2007, Montecatini 	Cell Sci. Technol., 2006, 3, 213–219.
+
+Terme, Italy. 	67 X. G. Zhang, S. Ohara, R. Maric, H. Okawa, T. Fukui, H. Yoshida,
+
+40 U. B. Pal and S. C. Singhal, J. Electrochem. Soc., 1990, 137, 2937–	T. Inagaki and K. Miura, Solid State Ionics, 2000, 133, 153–160.
+
+2941. 	68 K. Q. Huang, M. Feng, J. B. Goodenough and C. Milliken,
+
+41 N. J. Maskalick, Int. J. Hydrogen Energy, 1986, 11, 563–570. 	J. Electrochem. Soc., 1997, 144, 3620–3624.
+
+42 S. S. Penner, A. J. Appleby, B. S. Baker, J. L. Bates, L. B. Buss, 	69 X. G. Zhang, S. Ohara, H. Okawa, R. Maric and T. Fukui,
+
+W. 	J. 	Dollard, 	P. 	J. 	Fartis, 	E. 	A. 	Gillis, 	J. 	A. 	Gunsher, 	Solid State Ionics, 2001, 139, 145–152.
+
+A. Khandkar, 	M. 	Krumpelt, 	J. 	B. 	O’Sullivan, 	G. 	Runte, 	70 N. Maffei and G. de Silveira, Solid State Ionics, 2003, 159, 209–216.
+
+R. F. Savinell, J. R. Selman, D. A. Shores and P. Tarman, Energy 	71 K. Nath and D. Das, J. Sci. Ind. Res., 2007, 66, 701–709.
+
+(Amsterdam, Neth.), 1995, 20, 331–470. 	72 R. Prince and H. Kheshgi, CRC Crit. Rev. Microbiol., 2005, 31,
+
+43 S. C. Singhal and K. Kendall., High Temperature Solid Oxide Fuel 	19–31.
+
+Cells. 	Fundamentals, 	Design, 	and 	Applications, 	Elsevier 	Ltd., 	73 S. Kasahara, G. J. Hwang, H. Nakajima, H. S. Choi, K. Onuki and
+
+Oxford, UK, 2004.
+
+44 E. P. Butler and J. Drennan, J. Am. Ceram. Soc., 1982, 65, 474–478.
+
+45 D. Lybye and Y.-L. Liu, J. Eur. Ceram. Soc., 2006, 26, 599–604. 46 J. Drennan and E. P. Butler, Sci. Ceram., 1984, 12, 267–272.
+
+47 R. H. Doremus, Glass Science, John Wiley & Sons, New York, 1973. 48 N. P. Bansal and R. H. Doremus, Handbook of Glass Properties, Academic Press Inc., 1986.
+
+49 N. N. Osada, H. Uchida and M. Watanabe, J. Electrochem. Soc., 2006, 153, A816–A820.
+
+50 H. Uchida, N. N. Osada and M. Watanabe, Electrochem. Solid-State
+
+M. Nomura, J. Chem. Eng. Jpn., 2003, 36, 887–899.
+
+74 A. Steinfeld, C. Larson, R. Palumbo and M. Foley, Energy (Amsterdam, Neth.), 1996, 21, 205–222.
+
+75 M. Gratzel, Nature, 2001, 414, 338–344.
+
+76 M. Mogensen, E. S. Jensen, J. Sehested and K. Aasberg-Petersen, H. Larsen, R. Feidenhans’l, and L. Sønderberg Petersen, Risøenergy report 3. Hydrogen and its competitors. Risø-R-1469(EN), 2004, pp. 24–30, 2004. Risø National Laboratory (DK). Systems Analysis Department; Risø National Laboratory (DK).
+
+77 M. A. Liepa and A. Borhan, Int. J. Hydrogen Energy, 1986, 11, 435–
+
+Lett., 2004, 7, A500–A502. 	442.
+
+51 H. Uchida, S. Watanabe, Y. Tao, N. N. Osada and M. Watanabe, ECS Trans., 2007, 7, 365–371.
+
+52 P. Blennow, PhD Thesis, Lund University, 2007.
+
+53 R. Hino, K. Haga, H. Aita and K. Sekita, Nucl. Eng. Des., 2004, 233,
+
+78 J. Sigurvinsson, C. Mansilla, P. Lovera and F. Werkoff, Int. J. Hydrogen Energy, 2007, 32, 1174–1182.
+
+79 M. Ni, M. K. H. Leung and D. Y. C. Leung, Int. J. Hydrogen Energy, 2007, 32(18), 4648–4660.
+
+2340 | J. Mater. Chem., 2008, 18, 2331–2340
+
+This journal is ª The Royal Society of Chemistry 2008
