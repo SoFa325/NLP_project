@@ -10,6 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from gensim.models import KeyedVectors
 import preprocessing
 import vec_model
+import graph
 
 KEYWORDS = [
     'figure', 'fig', 'diagram', 'schematic', 'layout', 'overview',
@@ -244,9 +245,9 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
                 'file': pdf_path.name,
                 'figure': caption,
                 'image_file': images[image_idx]["image_filename"],
-                'next_sentences': description.strip()
+                'next_sentences': description.strip(),
                 #TODO ???
-                #'graph':
+                'graph':graph.extract_relations(description.strip())
             })
 
             image_idx += 1
@@ -266,7 +267,7 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
 <body>
   <h1>Extracted Figures and Descriptions</h1>
   <table>
-    <tr><th>File</th><th>Figure</th><th>Image</th><th>Description</th></tr>
+    <tr><th>File</th><th>Figure</th><th>Image</th><th>Description</th><th>Functional edges</th></tr>
 """
     for item in figures_and_descriptions:
         safe_text = item['next_sentences'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
@@ -276,6 +277,7 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
       <td>{item['figure']}</td>
       <td>{item['image_file']}</td>
       <td>{safe_text}</td>
+      <td>{item['graph']}</td>
     </tr>
 """
     html += """
