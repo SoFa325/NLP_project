@@ -65,11 +65,9 @@ def process_pdf_and_store(pdf_path: Path, output_img_path: Path):
     cursor = conn.cursor()
 
     try:
-        # 1. Статья
         text = pdf_to_text(pdf_path)
         article_id = insert_article(cursor, pdf_path.stem, "en", text)
 
-        # 2. Изображения
         images = extract_images_from_pdf(pdf_path, output_img_path)
 
         for img in images:

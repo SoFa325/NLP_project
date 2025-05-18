@@ -51,7 +51,7 @@ def init_db():
     connection.commit()
     cursor.close()
     connection.close()
-    print("База данных успешно инициализирована")
+    print("База данных успешно инициализирована.")
 
 if __name__ == "__main__":
     init_db()
