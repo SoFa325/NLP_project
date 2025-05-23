@@ -10,7 +10,6 @@ import networkx as nx
 import coreferee
 import json
 
-
 nlp = spacy.load('en_core_web_sm')
 nlp.add_pipe("coreferee")
 
@@ -23,30 +22,58 @@ GRAPH_CSV_RELATION = r'D:\Code\nlp\PDFFiles\GRAPH_CSV_RELATION'
 w2v_model_path = r'D:\Code\nlp\word2vec.bin'
 w2v_model = KeyedVectors.load_word2vec_format(w2v_model_path, binary=True)
 
+CONTROL_VERBS = ["control", "regulate", "inhibit", "activate", "break", "suppress"]
+DEPENDENCY_VERBS = ["depend", "require", "need"]
+EFFECT_VERBS = ["cause", "lead", "result", "affect", "increase", "decrease"]
+
 def extract_relations(text: str):
-    """
-    Извлекает связи между сущностями в тексте, такие как иерархические и подчинённые связи.
-    :param text: Текст, из которого извлекаются связи.
-    :return: Список кортежей, представляющих извлечённые связи.
-    """
     relations = []
-    doc = nlp(text)
-    
-    for sent in doc.sents:
+    text = nlp(text)
+    for sent in text.sents:
         for token in sent:
+            # Паттерн 1: nsubj + dobj (Субъект → Действие → Объект)
+            if token.dep_ == "nsubj" and token.head.pos_ == "VERB":
+                subject = token.text
+                verb = token.head.lemma_
+                obj = [t for t in token.head.children if t.dep_ == "dobj"]
+
+                if obj:
+                    rel_type = "ACTION_OBJ"
+                    if verb in CONTROL_VERBS:
+                        rel_type = "CONTROL"
+                    elif verb in EFFECT_VERBS:
+                        rel_type = "EFFECT"
+
+                    relations.append((subject, verb, obj[0].text, rel_type))
+
+            # Паттерн 2: nsubj + prep + pobj (Предложные отношения)
             if token.dep_ == "nsubj" and token.head.pos_ == "VERB":
                 preps = [t for t in token.head.children if t.dep_ == "prep"]
                 for prep in preps:
                     objs = [t for t in prep.children if t.dep_ == "pobj"]
                     if objs:
                         verb_phrase = f"{token.head.lemma_} {prep.text}"
-                        rel_type = "SUBORDINATION"
+                        rel_type = "PREPOSITIONAL"
+                        if token.head.lemma_ in DEPENDENCY_VERBS:
+                            rel_type = "DEPENDENCY"
+
                         relations.append((token.text, verb_phrase, objs[0].text, rel_type))
-            
+
+            # Паттерн 3: nsubj + xcomp (Глагольное дополнение)
+            if token.dep_ == "nsubj" and token.head.pos_ == "VERB":
+                xcomps = [t for t in token.head.children if t.dep_ == "xcomp"]
+                for xcomp in xcomps:
+                    objs = [t for t in xcomp.children if t.dep_ == "dobj"]
+                    if objs:
+                        relations.append((token.text, f"{token.head.lemma_} {xcomp.lemma_}",
+                                          objs[0].text, "XCOMP_EFFECT"))
+
+            # Обработка пассивных конструкций
             if token.dep_ == "nsubjpass" and token.head.pos_ == "VERB":
                 agent = [t for t in token.head.children if t.dep_ == "agent"]
                 if agent:
-                    relations.append((agent[0].text, token.head.lemma_, token.text, "PASSIVE_REL"))
+                    relations.append((agent[0].text, token.head.lemma_,
+                                      token.text, "PASSIVE_REL"))
     return relations
 
 def extract_flat_entities(text):
@@ -128,15 +155,16 @@ def assign_entities_to_topics(entities, df, lda_model, dictionary):
             entity_topic_assignment[ent] = None
     return entity_topic_assignment
 
-def build_knowledge_graph(df):
+def build_graphs_and_save(df, base_name):
     """
-    Строит граф знаний, используя кластеризацию сущностей и модель LDA.
-    :param df: DataFrame с текстами и извлечёнными сущностями.
-    :return: Граф знаний в виде объекта NetworkX DiGraph.
+    Строит два графа:
+    - Один с использованием кластеризации и LDA.
+    - Второй с добавлением всех типов связей из extract_relations.
     """
-    G = nx.DiGraph()
+    G_lda_cluster = nx.DiGraph()
+    G_all_relations = nx.DiGraph()
 
- 
+    # Строим граф кластеризации + LDA
     all_entities = list({ent for ents in df['entities'] for ent in ents})
     entity_vectors = np.array([get_entity_vector(ent, w2v_model) for ent in all_entities])
 
@@ -169,27 +197,32 @@ def build_knowledge_graph(df):
             'entities_per_topic': topics_dict
         }
 
-
     for cluster_id, data in knowledge_graph.items():
         cluster_node = f"Cluster_{cluster_id}"
-        G.add_node(cluster_node, type="cluster")
+        G_lda_cluster.add_node(cluster_node, type="cluster")
 
         for topic_id, topic_words in data['topics']:
             topic_node = f"{cluster_node}_Topic_{topic_id}"
-            G.add_node(topic_node, type="topic")
-            G.add_edge(cluster_node, topic_node)
+            G_lda_cluster.add_node(topic_node, type="topic")
+            G_lda_cluster.add_edge(cluster_node, topic_node)
 
             entities = data['entities_per_topic'].get(topic_id, [])[:15]
             for entity in entities:
                 entity_node = f"{topic_node}_Entity_{entity[:15]}"
-                G.add_node(entity_node, type="entity")
-                G.add_edge(topic_node, entity_node)
+                G_lda_cluster.add_node(entity_node, type="entity")
+                G_lda_cluster.add_edge(topic_node, entity_node)
 
+    # Строим граф с добавлением всех связей
     for rel in df['relations']:
-        if len(rel)>0 and len(rel[0]) == 4:
-            if rel[0][3] == "SUBORDINATION":
-                G.add_edge(rel[0][0], rel[0][2], relation_type=rel[0][1])  # Подчинённая связь
-    return G
+        if len(rel) > 0 and len(rel[0]) == 4:
+            G_all_relations.add_edge(rel[0][0], rel[0][2], relation_type=rel[0][1])
+
+    # Сохраняем графы с разными префиксами
+    lda_cluster_json_path = os.path.join(GRAPH_FOLDER, f"{base_name}_lda_cluster.json")
+    save_graph_to_json(G_lda_cluster, lda_cluster_json_path)
+
+    all_relations_json_path = os.path.join(GRAPH_FOLDER, f"{base_name}_all_relations.json")
+    save_graph_to_json(G_all_relations, all_relations_json_path)
 
 def save_graph_to_json(G, json_path):
     """
@@ -213,7 +246,6 @@ def process_csv_file(csv_path):
     df.columns = df.columns.str.strip()
 
     df['next_sentences'] = df['next_sentences'].apply(resolve_coref)
-
     df['entities'] = df['next_sentences'].apply(extract_flat_entities)
     df['relations'] = df['next_sentences'].apply(extract_relations)
 
@@ -222,22 +254,21 @@ def process_csv_file(csv_path):
     df.to_csv(csv_save_path, index=False)
     print(f"Entities and relations saved to {csv_save_path}")
 
-    return df  
+    return df
+
 def process_and_build_graph(csv_file_path):
     """
-    Обрабатывает CSV файл, строит граф знаний и сохраняет его в формате JSON.
+    Обрабатывает CSV файл, строит два графа знаний и сохраняет их в формате JSON.
     :param csv_file_path: Путь к CSV файлу для обработки.
     """
     df = pd.read_csv(csv_file_path)
     df = process_csv_file(csv_file_path)
 
-    G = build_knowledge_graph(df)
-
-    json_path = os.path.join(GRAPH_FOLDER, f"{os.path.splitext(os.path.basename(csv_file_path))[0]}.json")
-    save_graph_to_json(G, json_path)
+    base_name = os.path.splitext(os.path.basename(csv_file_path))[0]
+    build_graphs_and_save(df, base_name)
 
 
-# Вызов работы кода для отладки
+# Вызов работы кода
 
 for file in os.listdir(CSV_FOLDER):
     if file.endswith('.csv'):
