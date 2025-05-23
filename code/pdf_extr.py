@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from gensim.models import KeyedVectors
 import preprocessing
 import vec_model
-import graph
+from graph import *
 
 KEYWORDS = [
     'figure', 'fig', 'diagram', 'schematic', 'layout', 'overview',
@@ -246,48 +246,10 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
                 'figure': caption,
                 'image_file': images[image_idx]["image_filename"],
                 'next_sentences': description.strip(),
-                #TODO ???
-                'graph':graph.extract_relations(description.strip())
             })
 
             image_idx += 1
             local_count += 1
-
-    # HTML вывод
-    html = """
-<html>
-<head>
-  <title>Figures and Descriptions</title>
-  <style>
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
-    th { background: #eee; }
-  </style>
-</head>
-<body>
-  <h1>Extracted Figures and Descriptions</h1>
-  <table>
-    <tr><th>File</th><th>Figure</th><th>Image</th><th>Description</th><th>Functional edges</th></tr>
-"""
-    for item in figures_and_descriptions:
-        safe_text = item['next_sentences'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
-        html += f"""
-    <tr>
-      <td>{item['file']}</td>
-      <td>{item['figure']}</td>
-      <td>{item['image_file']}</td>
-      <td>{safe_text}</td>
-      <td>{item['graph']}</td>
-    </tr>
-"""
-    html += """
-  </table>
-</body>
-</html>
-"""
-    with open(output_html, 'w', encoding='utf-8') as f:
-        f.write(html)
-    print(f"Results saved to {output_html}")
 
     # CSV вывод
     csv_filename = csv_output_folder / f"{pdf_path.stem}.csv"
@@ -295,26 +257,12 @@ def extract_figures_and_descriptions(pdf_path: Path, output_html: Path, image_ou
     pd.DataFrame(figures_and_descriptions).to_csv(csv_filename, index=False, encoding='utf-8')
     print(f"Results saved to {csv_filename}")
 
+    # Добавляю вызов создания графа, надо передавать путь к csv! 
+    # Можете изменить логику работы
+    process_and_build_graph(csv_filename)
 
 
 
-
-
-
-"""
-def load_documents(directory):
-    documents = []
-    filenames = []
-    for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
-            with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
-                text = f.read()
-                tokens = preprocessing.lemmatization(preprocessing.preprocessing(text)).split()
-                #tokens = text
-                documents.append(tokens)
-                filenames.append(filename)
-    return documents, filenames
-"""
 def load_raw_documents(directory):
     documents = []
     filenames = []
