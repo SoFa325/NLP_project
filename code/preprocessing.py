@@ -43,7 +43,25 @@ def calculate_homonymy_percentage(text: str) -> float:
     percentage = (homonym_count / total_words) * 100
     return percentage
 
+def preprocessing_df(text: str) -> str:
+    """
+    Очищает текст от пунктуации, пробелов и стоп-слов.
+    :param text: исходный текст
+    :return: очищенный текст
+    """
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(text)
+    return " ".join(t.text for t in doc if not (t.is_punct or t.is_space or t.is_stop))
 
+def lemmatization_df(text: str) -> str:
+    """
+    Выполняет лемматизацию текста.
+    :param text: исходный текст
+    :return: лемматизированный текст
+    """
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(text)
+    return " ".join(t.lemma_ for t in doc)
 """
 #здесь пример использования
 with open('tgt.txt', 'r', encoding='utf-8') as file:#откуда

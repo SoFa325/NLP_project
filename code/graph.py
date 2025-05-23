@@ -9,12 +9,11 @@ from collections import defaultdict
 import networkx as nx
 import coreferee
 import json
-
+from preprocessing import preprocessing_df, lemmatization_df
 nlp = spacy.load('en_core_web_sm')
 nlp.add_pipe("coreferee")
 
 # Конфиги путей
-CSV_FOLDER = r'D:\Code\nlp\PDFFiles\ProcessedCSV'
 GRAPH_FOLDER = r'D:\Code\nlp\PDFFiles\GRAPH'
 GRAPH_CSV_RELATION = r'D:\Code\nlp\PDFFiles\GRAPH_CSV_RELATION'
 
@@ -244,6 +243,7 @@ def process_csv_file(csv_path):
     print(f"Processing {csv_path}...")
     df = pd.read_csv(csv_path)
     df.columns = df.columns.str.strip()
+    df['next_sentences'] = df['next_sentences'].astype(str).apply(lambda txt: lemmatization_df(preprocessing_df(txt)))
 
     df['next_sentences'] = df['next_sentences'].apply(resolve_coref)
     df['entities'] = df['next_sentences'].apply(extract_flat_entities)
@@ -261,9 +261,8 @@ def process_and_build_graph(csv_file_path):
     Обрабатывает CSV файл, строит два графа знаний и сохраняет их в формате JSON.
     :param csv_file_path: Путь к CSV файлу для обработки.
     """
-    df = pd.read_csv(csv_file_path)
+    # df = pd.read_csv(csv_file_path)
     df = process_csv_file(csv_file_path)
-
     base_name = os.path.splitext(os.path.basename(csv_file_path))[0]
     build_graphs_and_save(df, base_name)
 
